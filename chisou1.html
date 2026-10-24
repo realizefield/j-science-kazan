@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>第3講 地層と大地の変動 | GAMBA中学理科</title>
+<link rel="stylesheet" href="app.css">
+<style>
+.info-note{background:#F0F9FF;border-left:4px solid #0284C7;border-radius:0 8px 8px 0;padding:12px 15px;margin:12px 0;font-size:14px;line-height:1.8;color:#0C4A6E;}
+.info-note .label{font-weight:bold;color:#0284C7;display:block;margin-bottom:4px;}
+.tri-fig{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:14px 0;}
+.tri-fig .tf-box{background:#fff;border:1.5px solid #FFE0B2;border-radius:10px;padding:10px;text-align:center;flex:1;min-width:120px;}
+.tri-fig .tf-box img{max-width:100%;max-height:140px;}
+.tri-fig .tf-box .tf-cap{font-size:13px;font-weight:bold;color:#E67838;margin-top:6px;}
+.era-tbl{width:100%;border-collapse:collapse;margin:10px 0;font-size:13px;}
+.era-tbl th,.era-tbl td{border:1px solid #E0E0E0;padding:8px;text-align:center;vertical-align:middle;}
+.era-tbl th{background:#4FC3F7;color:#fff;}
+.era-tbl .ename{background:#FFF3E0;color:#E67838;font-weight:bold;}
+.era-tbl img{max-width:60px;max-height:60px;}
+</style>
+</head>
+<body data-page="chisou1">
+
+<nav class="topnav">
+  <span class="brand">🌋 GAMBA 中学理科 火山・地震・地形</span>
+  <span class="sep">|</span>
+  <a href="index.html">📊 単元表</a>
+  <a href="jishin1.html">◀ 第2講 地震</a>
+</nav>
+
+<div class="wrap">
+
+<header class="hero">
+  <div class="crumb">第3講 / 地層と大地の変動</div>
+  <h1>地層と大地の変動 <span class="stars">★★☆</span></h1>
+  <p class="sub">堆積岩のでき方、示相化石・示準化石の見分け方、しゅう曲や断層などの大地の変動、そして柱状図の読み取り方を学びます。</p>
+</header>
+
+<main>
+
+<!-- ================================================== -->
+<!--  単元1:堆積岩、風化・侵食                          -->
+<!-- ================================================== -->
+<div class="unit">
+  <div class="unit-title"><span class="num">1</span>堆積岩・風化・侵食</div>
+
+  <div class="stage challenge" data-ch-id="ch1-u1" data-target="#ch1-u1-readbox">
+    <div class="stage-head">
+      <span class="stage-label read">📖 説明</span>
+      <div class="stage-actions">
+        <span class="challenge-timer" style="display:none;">0:00.0</span>
+        <button class="ch-btn start">🎯 チャレンジ開始</button>
+        <button class="ch-btn judge" style="display:none;">✓ 判定</button>
+        <button class="ch-btn example" style="display:none;">📖 手本</button>
+        <button class="ch-btn reset" style="display:none;">↻ リセット</button>
+        <button class="ch-btn cancel" style="display:none;">⏹ 中断</button>
+      </div>
+    </div>
+
+    <div class="read-box" id="ch1-u1-readbox">
+      <p>流水により運ばれた土砂は、河口付近には粒の<span class="kw-blank" data-a="大きい">大きい</span>ものが堆積し、沖には粒の<span class="kw-blank" data-a="小さい">小さい</span>ものが堆積します。これらの堆積物が長い間に押し固められてできた岩石を<span class="kw-blank" data-a="堆積岩">堆積岩</span>といいます。</p>
+
+      <p>地表の岩石が、気温や風や水流によって表面からくずれていく現象を<span class="kw-blank" data-a="風化">風化</span>といいます。岩石が風や流水によって削られる現象を<span class="kw-blank" data-a="侵食">侵食</span>といいます。</p>
+
+      <h4>▶ 堆積岩の種類</h4>
+      <table class="tbl">
+        <thead><tr><th>堆積岩</th><th>特徴</th></tr></thead>
+        <tbody>
+          <tr><td>れき岩</td><td>粒の直径が2mm以上</td></tr>
+          <tr><td>砂岩</td><td>粒の直径が0.06mm〜2mm以下</td></tr>
+          <tr><td>泥岩</td><td>粒の直径が0.06mm以下</td></tr>
+          <tr><td>チャート</td><td>ケイソウ等の生物の死骸が溶けて沈殿したもの。褐色</td></tr>
+          <tr><td>石灰岩</td><td>サンゴなどの炭酸カルシウムの多い生物の死骸が溶けて沈殿したもの</td></tr>
+          <tr><td>凝灰岩</td><td>火山の噴出物(火山灰・火山れき・軽石)が堆積したもの</td></tr>
+        </tbody>
+      </table>
+
+      <div class="figure">
+        <img src="taisekigan_marui.png" alt="堆積岩の粒の丸み模式図">
+        <div class="caption">堆積岩の粒は、流水の影響で角が取れて丸くなっている</div>
+      </div>
+
+      <div class="figure">
+        <img src="sekkaigan_ensan.png" alt="石灰岩とチャートに塩酸をかける実験">
+        <div class="caption">石灰岩とチャートの見分け方(塩酸をかける実験)</div>
+      </div>
+
+      <div class="info-note">
+        <span class="label">【重要】</span>
+        <p style="margin:0;">①堆積岩の特徴は、粒の角が取れて<span class="kw-blank" data-a="丸い">丸い</span>こと(流水の影響)。②石灰岩とチャートは見た目が似ていますが、塩酸をかけると石灰岩は<span class="kw-blank" data-a="二酸化炭素">二酸化炭素</span>のあわが発生し、チャートは変化しません。③<span class="kw-blank" data-a="凝灰岩">凝灰岩</span>が地層にあれば、近くで火山活動があったことがわかります。このように当時の環境がわかる地層を<span class="kw-blank" data-a="かぎ層">かぎ層</span>といいます。</p>
+      </div>
+    </div>
+
+    <div class="point-box">
+      <span class="label">★ 覚えよう!</span>
+      <ul>
+        <li>堆積岩:れき岩(2mm以上)・砂岩(0.06〜2mm)・泥岩(0.06mm以下)</li>
+        <li>チャートと石灰岩は生物の死骸がもと。石灰岩に塩酸をかけると二酸化炭素が発生</li>
+        <li>凝灰岩がある地層 → 近くで火山活動があった証拠(かぎ層)</li>
+        <li>堆積岩の粒は流水の影響で角が取れて丸い</li>
+      </ul>
+    </div>
+
+    <div class="word-bank-inline">
+      <div class="wb-title">📚 語群 ― タップして選び、説明文の空欄をタップ!</div>
+      <div class="wb-words"></div>
+    </div>
+  </div>
+
+  <div class="minitest-block">
+    <div class="mt-block-title">✏️ ミニテスト(全5問)</div>
+
+    <div class="minitest" data-correct="o">
+      <div class="mt-stem"><span class="mt-num">問1</span>堆積岩にふくまれる粒は、流水で運ばれる間に角が取れて丸くなる。</div>
+      <div class="mt-choices"><button class="mt-c" data-v="o">○</button><button class="mt-c" data-v="x">×</button></div>
+      <div class="mt-exp">○ 正解です。流水によって運ばれる間に粒どうしがぶつかりあい、角が取れて丸みを帯びます。</div>
+    </div>
+
+    <div class="minitest" data-correct="x">
+      <div class="mt-stem"><span class="mt-num">問2</span>チャートに塩酸をかけると、二酸化炭素のあわが発生する。</div>
+      <div class="mt-choices"><button class="mt-c" data-v="o">○</button><button class="mt-c" data-v="x">×</button></div>
+      <div class="mt-exp">× 塩酸をかけて二酸化炭素のあわが発生するのは石灰岩です。チャートは塩酸をかけても変化しません。</div>
+    </div>
+
+    <div class="q4" data-correct="c">
+      <div class="q4-stem"><span class="q4-num">問3</span>粒の直径が0.06mm〜2mm以下の堆積岩を何というか。</div>
+      <div class="q4-choices">
+        <button class="q4-c" data-v="a">ア:れき岩</button>
+        <button class="q4-c" data-v="b">イ:泥岩</button>
+        <button class="q4-c" data-v="c">ウ:砂岩</button>
+        <button class="q4-c" data-v="d">エ:凝灰岩</button>
+      </div>
+      <div class="q4-exp">正解は<strong>ウ</strong>。砂岩の粒の直径は0.06mm〜2mm以下です。れき岩は2mm以上、泥岩は0.06mm以下です。</div>
+    </div>
+
+    <div class="q4" data-correct="b">
+      <div class="q4-stem"><span class="q4-num">問4</span>地層の中に凝灰岩の層が見つかった。このことからわかることは何か。</div>
+      <div class="q4-choices">
+        <button class="q4-c" data-v="a">ア:当時その地域は深い海だった</button>
+        <button class="q4-c" data-v="b">イ:近くで火山活動があった</button>
+        <button class="q4-c" data-v="c">ウ:当時その地域は陸上だった</button>
+        <button class="q4-c" data-v="d">エ:氷河が近くにあった</button>
+      </div>
+      <div class="q4-exp">正解は<strong>イ</strong>。凝灰岩は火山灰などの火山噴出物からできる岩石なので、その地層ができた当時、近くで火山活動があったことがわかります。</div>
+    </div>
+
+    <div class="q4" data-correct="a">
+      <div class="q4-stem"><span class="q4-num">問5</span>河口付近と沖で堆積する粒の大きさの違いとして正しいものはどれか。</div>
+      <div class="q4-choices">
+        <button class="q4-c" data-v="a">ア:河口付近は粒が大きく、沖は粒が小さい</button>
+        <button class="q4-c" data-v="b">イ:河口付近は粒が小さく、沖は粒が大きい</button>
+        <button class="q4-c" data-v="c">ウ:どちらも同じ大きさの粒が堆積する</button>
+        <button class="q4-c" data-v="d">エ:粒の大きさは堆積場所と無関係</button>
+      </div>
+      <div class="q4-exp">正解は<strong>ア</strong>。重い粒ほど早く沈むため、河口付近には大きい粒が、沖には小さい粒が堆積します。</div>
+    </div>
+
+    <div class="mt-block-result"></div>
+    <div style="text-align:center;"><button class="mt-block-reset">↻ もう一度</button></div>
+  </div>
+
+  <div class="ranking">
+    <h3>🏆 ベストタイム</h3>
+    <ul id="ranking-ch1-u1" class="ranking-list"></ul>
+    <button class="btn outline" onclick="clearRanking('ch1-u1')" style="margin-top:6px;font-size:12px;padding:4px 12px;">記録をリセット</button>
+  </div>
+</div>
+
+
+<!-- ================================================== -->
+<!--  単元2:化石(示相化石・示準化石)                    -->
+<!-- ================================================== -->
+<div class="unit">
+  <div class="unit-title"><span class="num">2</span>化石(示相化石・示準化石)</div>
+
+  <div class="stage challenge" data-ch-id="ch1-u2" data-target="#ch1-u2-readbox">
+    <div class="stage-head">
+      <span class="stage-label read">📖 説明</span>
+      <div class="stage-actions">
+        <span class="challenge-timer" style="display:none;">0:00.0</span>
+        <button class="ch-btn start">🎯 チャレンジ開始</button>
+        <button class="ch-btn judge" style="display:none;">✓ 判定</button>
+        <button class="ch-btn example" style="display:none;">📖 手本</button>
+        <button class="ch-btn reset" style="display:none;">↻ リセット</button>
+        <button class="ch-btn cancel" style="display:none;">⏹ 中断</button>
+      </div>
+    </div>
+
+    <div class="read-box" id="ch1-u2-readbox">
+      <p>化石は<span class="kw-blank" data-a="堆積岩">堆積岩</span>の中にみられ、火成岩の中にはほとんどみられません。</p>
+
+      <h4>① 示相化石</h4>
+      <p><span class="kw-blank" data-a="示相化石">示相化石</span>とは、当時の自然環境を知ることのできる化石です。<span class="kw-blank" data-a="せまい">せまい</span>範囲で、<span class="kw-blank" data-a="長い">長い</span>期間生存した生物の化石が示相化石となります。</p>
+
+      <div class="tri-fig">
+        <div class="tf-box"><img src="sango.png" alt="サンゴの化石"><div class="tf-cap">サンゴの化石<br>(暖かく浅い海)</div></div>
+        <div class="tf-box"><img src="asarigai.png" alt="アサリ貝の化石"><div class="tf-cap">アサリ貝の化石<br>(浅い海)</div></div>
+      </div>
+
+      <h4>② 示準化石</h4>
+      <p><span class="kw-blank" data-a="示準化石">示準化石</span>とは、その時代を知る重要な手がかりとなる化石です。<span class="kw-blank" data-a="広い">広い</span>範囲で、<span class="kw-blank" data-a="短い">短い</span>期間生息していた生物の化石が示準化石となります。地質ができた年代の区分(古生代・中生代・新生代など)を<span class="kw-blank" data-a="地質年代">地質年代</span>といいます。</p>
+
+      <table class="era-tbl">
+        <thead><tr><th>地質年代</th><th>代表的な示準化石</th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="ename">古生代</td>
+            <td>
+              <img src="sanyoumushi_zu.png" alt="三葉虫 模式図"><img src="sanyoumushi_shashin.png" alt="三葉虫 写真">
+              <img src="fusulina_zu.png" alt="フズリナ 模式図"><img src="fusulina_shashin.png" alt="フズリナ 顕微鏡写真">
+              <div>三葉虫・フズリナ</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="ename">中生代</td>
+            <td>
+              <img src="kyouryuu_shisochou.png" alt="恐竜・始祖鳥"><img src="ammonite.png" alt="アンモナイト">
+              <div>恐竜・アンモナイト</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="ename">新生代(第三紀)</td>
+            <td>
+              <img src="vicarya.png" alt="ビカリア"><img src="metasequoia_ha.png" alt="メタセコイア 葉の化石"><img src="metasequoia_ki.png" alt="メタセコイア 現生の木">
+              <div>ビカリア・メタセコイア</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="ename">新生代(第四紀)</td>
+            <td><img src="mammoth.png" alt="マンモス"><div>マンモス</div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="point-box">
+      <span class="label">★ 覚えよう!</span>
+      <ul>
+        <li>示相化石……当時の環境がわかる。せまい範囲・長い期間生きた生物(例:サンゴ=暖かく浅い海)</li>
+        <li>示準化石……時代がわかる。広い範囲・短い期間生きた生物</li>
+        <li>古生代:三葉虫・フズリナ／中生代:恐竜・アンモナイト／新生代:ビカリア・メタセコイア・マンモス</li>
+      </ul>
+    </div>
+
+    <div class="word-bank-inline">
+      <div class="wb-title">📚 語群 ― タップして選び、説明文の空欄をタップ!</div>
+      <div class="wb-words"></div>
+    </div>
+  </div>
+
+  <div class="minitest-block">
+    <div class="mt-block-title">✏️ ミニテスト(全5問)</div>
+
+    <div class="minitest" data-correct="x">
+      <div class="mt-stem"><span class="mt-num">問1</span>示準化石は、せまい範囲で長い期間生息していた生物の化石である。</div>
+      <div class="mt-choices"><button class="mt-c" data-v="o">○</button><button class="mt-c" data-v="x">×</button></div>
+      <div class="mt-exp">× それは示相化石の特徴です。示準化石は広い範囲で短い期間生息していた生物の化石です。</div>
+    </div>
+
+    <div class="minitest" data-correct="o">
+      <div class="mt-stem"><span class="mt-num">問2</span>アンモナイトは中生代の示準化石である。</div>
+      <div class="mt-choices"><button class="mt-c" data-v="o">○</button><button class="mt-c" data-v="x">×</button></div>
+      <div class="mt-exp">○ 正解です。アンモナイトは恐竜と同じく中生代を代表する示準化石です。</div>
+    </div>
+
+    <div class="q4" data-correct="c">
+      <div class="q4-stem"><span class="q4-num">問3</span>サンゴの化石が発見された地層から、当時の環境としてわかることはどれか。</div>
+      <div class="q4-choices">
+        <button class="q4-c" data-v="a">ア:冷たく深い海だった</button>
+        <button class="q4-c" data-v="b">イ:陸上の湖だった</button>
+        <button class="q4-c" data-v="c">ウ:暖かく浅い海だった</button>
+        <button class="q4-c" data-v="d">エ:極寒の氷河地帯だった</button>
+      </div>
+      <div class="q4-exp">正解は<strong>ウ</strong>。サンゴは暖かく浅い海で生息する生物なので、その化石から当時暖かく浅い海だったことがわかります。</div>
+    </div>
+
+    <div class="q4" data-correct="d">
+      <div class="q4-stem"><span class="q4-num">問4</span>古生代の示準化石の組み合わせとして正しいものはどれか。</div>
+      <div class="q4-choices">
+        <button class="q4-c" data-v="a">ア:恐竜・アンモナイト</button>
+        <button class="q4-c" data-v="b">イ:ビカリア・メタセコイア</button>
+        <button class="q4-c" data-v="c">ウ:マンモス・ナウマンゾウ</button>
+        <button class="q4-c" data-v="d">エ:三葉虫・フズリナ</button>
+      </div>
+      <div class="q4-exp">正解は<strong>エ</strong>。三葉虫とフズリナは古生代を代表する示準化石です。</div>
+    </div>
+
+    <div class="q4" data-correct="b">
+      <div class="q4-stem"><span class="q4-num">問5</span>第四紀を代表する示準化石はどれか。</div>
+      <div class="q4-choices">
+        <button class="q4-c" data-v="a">ア:フズリナ</button>
+        <button class="q4-c" data-v="b">イ:マンモス</button>
+        <button class="q4-c" data-v="c">ウ:アンモナイト</button>
+        <button class="q4-c" data-v="d">エ:三葉虫</button>
+      </div>
+      <div class="q4-exp">正解は<strong>イ</strong>。マンモスは第四紀(寒冷な時期と暖かい時期が繰り返された時代)を代表する示準化石です。</div>
+    </div>
+
+    <div class="mt-block-result"></div>
+    <div style="text-align:center;"><button class="mt-block-reset">↻ もう一度</button></div>
+  </div>
+
+  <div class="ranking">
+    <h3>🏆 ベストタイム</h3>
+    <ul id="ranking-ch1-u2" class="ranking-list"></ul>
+    <button class="btn outline" onclick="clearRanking('ch1-u2')" style="margin-top:6px;font-size:12px;padding:4px 12px;">記録をリセット</button>
+  </div>
+</div>
+
+
+<!-- ================================================== -->
+<!--  単元3:大地の変動                                  -->
+<!-- ================================================== -->
+<div class="unit">
+  <div class="unit-title"><span class="num">3</span>大地の変動</div>
+
+  <div class="stage challenge" data-ch-id="ch1-u3" data-target="#ch1-u3-readbox">
+    <div class="stage-head">
+      <span class="stage-label read">📖 説明</span>
+      <div class="stage-actions">
+        <span class="challenge-timer" style="display:none;">0:00.0</span>
+        <button class="ch-btn start">🎯 チャレンジ開始</button>
+        <button class="ch-btn judge" style="display:none;">✓ 判定</button>
+        <button class="ch-btn example" style="display:none;">📖 手本</button>
+        <button class="ch-btn reset" style="display:none;">↻ リセット</button>
+        <button class="ch-btn cancel" style="display:none;">⏹ 中断</button>
+      </div>
+    </div>
+
+    <div class="read-box" id="ch1-u3-readbox">
+      <p>地層に両方から力が加わり、押し曲げられた地層を<span class="kw-blank" data-a="しゅう曲">しゅう曲</span>といいます。地層に押す力や引っ張る力が働いて切れてずれた地層を<span class="kw-blank" data-a="断層">断層</span>といいます。</p>
+
+      <div class="figure">
+        <img src="nihonrettou_danmen.png" alt="日本列島の断面図(大陸プレートと海洋プレート)">
+        <div class="caption">日本列島の断面図</div>
+      </div>
+
+      <p>日本列島は、大陸側のプレート(地殻)である<span class="kw-blank" data-a="大陸">大陸</span>プレートの下に、太平洋側の<span class="kw-blank" data-a="海洋">海洋</span>プレートがもぐりこむ形になっています。</p>
+
+      <p>プレート同士がぶつかり、下にもぐることでできた海底の溝を<span class="kw-blank" data-a="海溝">海溝</span>といいます。海底で、プレート同士がぶつかり上に盛り上ってできた海底の大きな山脈を<span class="kw-blank" data-a="海嶺">海嶺</span>といいます。</p>
+    </div>
+
+    <div class="point-box">
+      <span class="label">★ 覚えよう!</span>
+      <ul>
+        <li>しゅう曲……両方から押されて地層が曲がったもの</li>
+        <li>断層……地層に力が働いて切れ、ずれたもの</li>
+        <li>日本列島は大陸プレートの下に海洋プレートがもぐりこむ形</li>
+        <li>海溝……プレートがぶつかって下にもぐりこんだ海底の溝／海嶺……盛り上った海底の山脈</li>
+      </ul>
+    </div>
+
+    <div class="word-bank-inline">
+      <div class="wb-title">📚 語群 ― タップして選び、説明文の空欄をタップ!</div>
+      <div class="wb-words"></div>
+    </div>
+  </div>
+
+  <div class="minitest-block">
+    <div class="mt-block-title">✏️ ミニテスト(全4問)</div>
+
+    <div class="minitest" data-correct="x">
+      <div class="mt-stem"><span class="mt-num">問1</span>地層に力が加わり切れてずれたものを「しゅう曲」という。</div>
+      <div class="mt-choices"><button class="mt-c" data-v="o">○</button><button class="mt-c" data-v="x">×</button></div>
+      <div class="mt-exp">× それは断層の説明です。しゅう曲は、地層が切れずに押し曲げられたものです。</div>
+    </div>
+
+    <div class="minitest" data-correct="o">
+      <div class="mt-stem"><span class="mt-num">問2</span>海溝は、プレート同士がぶつかり下にもぐることでできた海底の溝である。</div>
+      <div class="mt-choices"><button class="mt-c" data-v="o">○</button><button class="mt-c" data-v="x">×</button></div>
+      <div class="mt-exp">○ 正解です。海溝はプレートの沈みこみによってできる深い溝です。</div>
+    </div>
+
+    <div class="q4" data-correct="c">
+      <div class="q4-stem"><span class="q4-num">問3</span>海底で、プレート同士がぶつかり上に盛り上ってできた大きな山脈を何というか。</div>
+      <div class="q4-choices">
+        <button class="q4-c" data-v="a">ア:海溝</button>
+        <button class="q4-c" data-v="b">イ:断層</button>
+        <button class="q4-c" data-v="c">ウ:海嶺</button>
+        <button class="q4-c" data-v="d">エ:しゅう曲</button>
+      </div>
+      <div class="q4-exp">正解は<strong>ウ</strong>。海嶺は海底で盛り上ってできた大きな山脈です。</div>
+    </div>
+
+    <div class="q4" data-correct="a">
+      <div class="q4-stem"><span class="q4-num">問4</span>日本列島付近のプレートの様子として正しいものはどれか。</div>
+      <div class="q4-choices">
+        <button class="q4-c" data-v="a">ア:大陸プレートの下に海洋プレートがもぐりこんでいる</button>
+        <button class="q4-c" data-v="b">イ:海洋プレートの下に大陸プレートがもぐりこんでいる</button>
+        <button class="q4-c" data-v="c">ウ:プレートは動いていない</button>
+        <button class="q4-c" data-v="d">エ:2つのプレートは互いに離れていくだけである</button>
+      </div>
+      <div class="q4-exp">正解は<strong>ア</strong>。日本列島付近では、大陸プレートの下に太平洋側の海洋プレートがもぐりこんでいます。</div>
+    </div>
+
+    <div class="mt-block-result"></div>
+    <div style="text-align:center;"><button class="mt-block-reset">↻ もう一度</button></div>
+  </div>
+
+  <div class="ranking">
+    <h3>🏆 ベストタイム</h3>
+    <ul id="ranking-ch1-u3" class="ranking-list"></ul>
+    <button class="btn outline" onclick="clearRanking('ch1-u3')" style="margin-top:6px;font-size:12px;padding:4px 12px;">記録をリセット</button>
+  </div>
+</div>
+
+
+<!-- ================================================== -->
+<!--  単元4:柱状図の読み方                              -->
+<!-- ================================================== -->
+<div class="unit">
+  <div class="unit-title"><span class="num">4</span>柱状図の読み方</div>
+
+  <div class="stage challenge" data-ch-id="ch1-u4" data-target="#ch1-u4-readbox">
+    <div class="stage-head">
+      <span class="stage-label read">📖 説明</span>
+      <div class="stage-actions">
+        <span class="challenge-timer" style="display:none;">0:00.0</span>
+        <button class="ch-btn start">🎯 チャレンジ開始</button>
+        <button class="ch-btn judge" style="display:none;">✓ 判定</button>
+        <button class="ch-btn example" style="display:none;">📖 手本</button>
+        <button class="ch-btn reset" style="display:none;">↻ リセット</button>
+        <button class="ch-btn cancel" style="display:none;">⏹ 中断</button>
+      </div>
+    </div>
+
+    <div class="read-box" id="ch1-u4-readbox">
+      <p>土地の地表からボーリング(穴を掘って)して取り出された柱状のサンプルよりつくられる地質の断面図を<span class="kw-blank" data-a="柱状図">柱状図</span>といいます。凝灰岩の地層がある場合、その地域近くで火山噴火があったことがわかります。このように、当時の環境がわかる地層を<span class="kw-blank" data-a="かぎ層">かぎ層</span>といいます。</p>
+
+      <div class="fig-with-table">
+        <div class="figure">
+          <img src="chuujouzu_reidai.png" alt="柱状図の例題(P地点・Q地点)">
+          <div class="caption">例題:P地点・Q地点の柱状図</div>
+        </div>
+        <div class="fig-side">
+          <div class="fig-side-title">▶ 凡例(地層記号)</div>
+          <img src="chuujouzu_hanrei.png" alt="柱状図の岩石の凡例" style="max-width:100%;">
+        </div>
+      </div>
+
+      <p>複数の地点の柱状図を比べるときは、同じ<span class="kw-blank" data-a="かぎ層">かぎ層</span>(例:凝灰岩の層)をそろえて比較することで、それぞれの地層が堆積した順番(新旧関係)を知ることができます。下の層ほど<span class="kw-blank" data-a="古く">古く</span>、上の層ほど<span class="kw-blank" data-a="新しい">新しい</span>のが基本です。</p>
+
+      <div class="figure">
+        <img src="chuujouzu_renshuu.png" alt="柱状図の練習問題(崖P・崖Q)">
+        <div class="caption">練習問題:崖P・崖Qの柱状図</div>
+      </div>
+    </div>
+
+    <div class="point-box">
+      <span class="label">★ 覚えよう!</span>
+      <ul>
+        <li>柱状図……ボーリングで取り出したサンプルからつくる地質の断面図</li>
+        <li>かぎ層(凝灰岩など)をそろえて比較すると、地層の新旧がわかる</li>
+        <li>地層は下にあるほど古く、上にあるほど新しい(堆積した順)</li>
+      </ul>
+    </div>
+
+    <div class="word-bank-inline">
+      <div class="wb-title">📚 語群 ― タップして選び、説明文の空欄をタップ!</div>
+      <div class="wb-words"></div>
+    </div>
+  </div>
+
+  <div class="minitest-block">
+    <div class="mt-block-title">✏️ ミニテスト(全4問)</div>
+
+    <div class="minitest" data-correct="o">
+      <div class="mt-stem"><span class="mt-num">問1</span>地層は、ふつう下にある層ほど古く、上にある層ほど新しい。</div>
+      <div class="mt-choices"><button class="mt-c" data-v="o">○</button><button class="mt-c" data-v="x">×</button></div>
+      <div class="mt-exp">○ 正解です。地層は下から順に積み重なっていくため、下の層ほど古く堆積したものです。</div>
+    </div>
+
+    <div class="minitest" data-correct="x">
+      <div class="mt-stem"><span class="mt-num">問2</span>柱状図は、川の流れを図にしたものである。</div>
+      <div class="mt-choices"><button class="mt-c" data-v="o">○</button><button class="mt-c" data-v="x">×</button></div>
+      <div class="mt-exp">× 柱状図は、ボーリングで取り出した地質のサンプルからつくる地層の断面図です。</div>
+    </div>
+
+    <div class="q4" data-correct="d">
+      <div class="q4-stem"><span class="q4-num">問3</span>離れた2地点の柱状図を比較するとき、手がかりとして最も適した層はどれか。</div>
+      <div class="q4-choices">
+        <button class="q4-c" data-v="a">ア:砂岩の層</button>
+        <button class="q4-c" data-v="b">イ:泥岩の層</button>
+        <button class="q4-c" data-v="c">ウ:れき岩の層</button>
+        <button class="q4-c" data-v="d">エ:凝灰岩の層</button>
+      </div>
+      <div class="q4-exp">正解は<strong>エ</strong>。凝灰岩の層(かぎ層)は、火山噴火という同じ時期の出来事を示すため、離れた地点の地層を比較する手がかりになります。</div>
+    </div>
+
+    <div class="q4" data-correct="b">
+      <div class="q4-stem"><span class="q4-num">問4</span>ボーリング調査によって得られる柱状のサンプルから何がわかるか。</div>
+      <div class="q4-choices">
+        <button class="q4-c" data-v="a">ア:その土地の気温</button>
+        <button class="q4-c" data-v="b">イ:地下の地層の重なり方</button>
+        <button class="q4-c" data-v="c">ウ:その土地の人口</button>
+        <button class="q4-c" data-v="d">エ:地震の発生時刻</button>
+      </div>
+      <div class="q4-exp">正解は<strong>イ</strong>。ボーリング調査で得られたサンプルから、地下にどのような地層がどんな順番で重なっているかがわかります。</div>
+    </div>
+
+    <div class="mt-block-result"></div>
+    <div style="text-align:center;"><button class="mt-block-reset">↻ もう一度</button></div>
+  </div>
+
+  <div class="ranking">
+    <h3>🏆 ベストタイム</h3>
+    <ul id="ranking-ch1-u4" class="ranking-list"></ul>
+    <button class="btn outline" onclick="clearRanking('ch1-u4')" style="margin-top:6px;font-size:12px;padding:4px 12px;">記録をリセット</button>
+  </div>
+</div>
+
+
+<!-- ================================================== -->
+<!--  単元末:次のアクション                              -->
+<!-- ================================================== -->
+<div class="next-actions">
+  <h3>🎉 第3講、おつかれさま!</h3>
+  <p>これで「火山・地震・地形」の全単元が終わりました!</p>
+  <div class="links">
+    <a href="index.html">📊 単元表へ戻る</a>
+  </div>
+</div>
+
+<nav class="pagenav">
+  <a href="jishin1.html">
+    <span class="label">◀ BACK</span>
+    <span class="title">第2講 地震</span>
+  </a>
+  <a href="index.html" class="next">
+    <span class="label">NEXT ▶</span>
+    <span class="title">単元表に戻る</span>
+  </a>
+</nav>
+
+</main>
+</div>
+
+<!-- 共通モーダル類 -->
+<div class="example-modal" id="example-modal" onclick="if(event.target===this) this.classList.remove('show')">
+  <div class="example-content" id="example-content"></div>
+</div>
+
+<div class="pass-overlay" id="pass-overlay">
+  <div class="pass-dialog">
+    <div class="pass-emoji">🎉</div>
+    <h2>合 格!</h2>
+    <p>すべて正解!よくできました!</p>
+    <div class="pass-time" id="pass-time-display">0:00.0</div>
+    <p style="font-size:13px;color:#666;margin-top:6px;">ランキングに記録されました</p>
+    <div class="pass-actions">
+      <button class="btn outline" onclick="document.getElementById('pass-overlay').classList.remove('show')">閉じる</button>
+    </div>
+  </div>
+</div>
+
+<div class="fail-toast" id="fail-toast"></div>
+<div class="confetti" id="confetti"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
