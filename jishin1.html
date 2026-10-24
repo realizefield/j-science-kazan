@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>第2講 地震 | GAMBA中学理科</title>
+<link rel="stylesheet" href="app.css">
+<style>
+.info-note{background:#F0F9FF;border-left:4px solid #0284C7;border-radius:0 8px 8px 0;padding:12px 15px;margin:12px 0;font-size:14px;line-height:1.8;color:#0C4A6E;}
+.info-note .label{font-weight:bold;color:#0284C7;display:block;margin-bottom:4px;}
+.tri-fig{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:14px 0;}
+.tri-fig .tf-box{background:#fff;border:1.5px solid #FFE0B2;border-radius:10px;padding:10px;text-align:center;flex:1;min-width:140px;}
+.tri-fig .tf-box img{max-width:100%;max-height:150px;}
+.tri-fig .tf-box .tf-cap{font-size:13px;font-weight:bold;color:#E67838;margin-top:6px;}
+.calc-box{background:#FFFDF5;border:2px dashed #FFB74D;border-radius:10px;padding:14px 16px;margin:12px 0;font-size:14px;line-height:1.9;}
+.calc-box .q{font-weight:bold;color:#2C3E50;margin-bottom:6px;}
+.calc-box .a{color:#2E7D32;}
+</style>
+</head>
+<body data-page="jishin1">
+
+<nav class="topnav">
+  <span class="brand">🌋 GAMBA 中学理科 火山・地震・地形</span>
+  <span class="sep">|</span>
+  <a href="index.html">📊 単元表</a>
+  <a href="kazan1.html">◀ 第1講 火山</a>
+</nav>
+
+<div class="wrap">
+
+<header class="hero">
+  <div class="crumb">第2講 / 地震</div>
+  <h1>地震のしくみ <span class="stars">★★☆</span></h1>
+  <p class="sub">プレートの動きがどのように地震を引き起こすのか、P波とS波の違い、震度とマグニチュードの違い、そして初期微動継続時間を使った計算問題にも挑戦します。</p>
+</header>
+
+<main>
+
+<!-- ================================================== -->
+<!--  単元1:地震発生のメカニズム                        -->
+<!-- ================================================== -->
+<div class="unit">
+  <div class="unit-title"><span class="num">1</span>地震発生のメカニズム</div>
+
+  <div class="stage challenge" data-ch-id="js1-u1" data-target="#js1-u1-readbox">
+    <div class="stage-head">
+      <span class="stage-label read">📖 説明</span>
+      <div class="stage-actions">
+        <span class="challenge-timer" style="display:none;">0:00.0</span>
+        <button class="ch-btn start">🎯 チャレンジ開始</button>
+        <button class="ch-btn judge" style="display:none;">✓ 判定</button>
+        <button class="ch-btn example" style="display:none;">📖 手本</button>
+        <button class="ch-btn reset" style="display:none;">↻ リセット</button>
+        <button class="ch-btn cancel" style="display:none;">⏹ 中断</button>
+      </div>
+    </div>
+
+    <div class="read-box" id="js1-u1-readbox">
+      <p>Aの<span class="kw-blank" data-a="大陸">大陸</span>プレートの下に、Bの<span class="kw-blank" data-a="海洋">海洋</span>プレートがもぐりこんでいます。もぐりこむ海洋プレートに引きずられて大陸プレートにひずみ(ストレス)がたまり、プレートが<span class="kw-blank" data-a="元に戻ろう">元に戻ろう</span>とするときに地震が発生すると考えられています。</p>
+
+      <div class="tri-fig">
+        <div class="tf-box"><img src="jishin_mechanism1.png" alt="地震発生のメカニズム図1"><div class="tf-cap">① ひずみがたまる</div></div>
+        <div class="tf-box"><img src="jishin_mechanism2.png" alt="地震発生のメカニズム図2"><div class="tf-cap">② ひずみが限界に</div></div>
+        <div class="tf-box"><img src="jishin_mechanism3.png" alt="地震発生のメカニズム図3"><div class="tf-cap">③ 元に戻り地震発生</div></div>
+      </div>
+
+      <p>太平洋側の震源の深さは一般的に<span class="kw-blank" data-a="浅く">浅く</span>、日本海側で発生する地震の震源の深さは<span class="kw-blank" data-a="深い">深い</span>という特徴があります。これは、太平洋側から沈みこんだ海洋プレートが、日本海側に向かって次第に深くなっていくためです。</p>
+    </div>
+
+    <div class="point-box">
+      <span class="label">★ 覚えよう!</span>
+      <ul>
+        <li>大陸プレートの下に海洋プレートがもぐりこみ、ひずみがたまる</li>
+        <li>プレートが元に戻ろうとするときに地震が発生する</li>
+        <li>震源の深さ:太平洋側は浅く、日本海側に向かうほど深くなる</li>
+      </ul>
+    </div>
+
+    <div class="word-bank-inline">
+      <div class="wb-title">📚 語群 ― タップして選び、説明文の空欄をタップ!</div>
+      <div class="wb-words"></div>
+    </div>
+  </div>
+
+  <div class="minitest-block">
+    <div class="mt-block-title">✏️ ミニテスト(全4問)</div>
+
+    <div class="minitest" data-correct="o">
+      <div class="mt-stem"><span class="mt-num">問1</span>日本付近では、大陸プレートの下に海洋プレートがもぐりこんでいる。</div>
+      <div class="mt-choices"><button class="mt-c" data-v="o">○</button><button class="mt-c" data-v="x">×</button></div>
+      <div class="mt-exp">○ 正解です。海洋プレートが大陸プレートの下にもぐりこむことで、ひずみがたまります。</div>
+    </div>
+
+    <div class="minitest" data-correct="x">
+      <div class="mt-stem"><span class="mt-num">問2</span>震源の深さは、太平洋側よりも日本海側の方が浅い。</div>
+      <div class="mt-choices"><button class="mt-c" data-v="o">○</button><button class="mt-c" data-v="x">×</button></div>
+      <div class="mt-exp">× 逆です。太平洋側の震源は浅く、日本海側に向かうほど震源は深くなります。</div>
+    </div>
+
+    <div class="q4" data-correct="b">
+      <div class="q4-stem"><span class="q4-num">問3</span>地震が発生するしくみとして正しいものはどれか。</div>
+      <div class="q4-choices">
+        <button class="q4-c" data-v="a">ア:マグマが冷えて固まるときに発生する</button>
+        <button class="q4-c" data-v="b">イ:プレートにたまったひずみが、元に戻ろうとするときに発生する</button>
+        <button class="q4-c" data-v="c">ウ:火山ガスが噴き出すときに発生する</button>
+        <button class="q4-c" data-v="d">エ:台風が通過するときに発生する</button>
+      </div>
+      <div class="q4-exp">正解は<strong>イ</strong>。プレートの沈みこみによってたまったひずみが限界に達し、もとに戻ろうとするときに地震が発生します。</div>
+    </div>
+
+    <div class="q4" data-correct="c">
+      <div class="q4-stem"><span class="q4-num">問4</span>日本付近の震源の深さの特徴として正しいものはどれか。</div>
+      <div class="q4-choices">
+        <button class="q4-c" data-v="a">ア:太平洋側も日本海側もつねに同じ深さ</button>
+        <button class="q4-c" data-v="b">イ:太平洋側は深く、日本海側は浅い</button>
+        <button class="q4-c" data-v="c">ウ:太平洋側は浅く、日本海側に向かうほど深い</button>
+        <button class="q4-c" data-v="d">エ:震源の深さには規則性がない</button>
+      </div>
+      <div class="q4-exp">正解は<strong>ウ</strong>。もぐりこんだ海洋プレートが日本海側に向かって深くなっていくため、震源もそれに沿って深くなります。</div>
+    </div>
+
+    <div class="mt-block-result"></div>
+    <div style="text-align:center;"><button class="mt-block-reset">↻ もう一度</button></div>
+  </div>
+
+  <div class="ranking">
+    <h3>🏆 ベストタイム</h3>
+    <ul id="ranking-js1-u1" class="ranking-list"></ul>
+    <button class="btn outline" onclick="clearRanking('js1-u1')" style="margin-top:6px;font-size:12px;padding:4px 12px;">記録をリセット</button>
+  </div>
+</div>
+
+
+<!-- ================================================== -->
+<!--  単元2:地震波(P波・S波)                           -->
+<!-- ================================================== -->
+<div class="unit">
+  <div class="unit-title"><span class="num">2</span>地震波(P波・S波)</div>
+
+  <div class="stage challenge" data-ch-id="js1-u2" data-target="#js1-u2-readbox">
+    <div class="stage-head">
+      <span class="stage-label read">📖 説明</span>
+      <div class="stage-actions">
+        <span class="challenge-timer" style="display:none;">0:00.0</span>
+        <button class="ch-btn start">🎯 チャレンジ開始</button>
+        <button class="ch-btn judge" style="display:none;">✓ 判定</button>
+        <button class="ch-btn example" style="display:none;">📖 手本</button>
+        <button class="ch-btn reset" style="display:none;">↻ リセット</button>
+        <button class="ch-btn cancel" style="display:none;">⏹ 中断</button>
+      </div>
+    </div>
+
+    <div class="read-box" id="js1-u2-readbox">
+      <div class="figure">
+        <img src="jishin_hakei.png" alt="地震計の波形(初期微動→主要動)">
+        <div class="caption">地震計の波形(初期微動のあと主要動が続く)</div>
+      </div>
+
+      <p><span class="kw-blank" data-a="P">P</span>波は初期微動を起こす、速さの速い波(7〜8km/秒)です。音と同じように、進行方向と同じ方向に振動する<span class="kw-blank" data-a="縦">縦</span>波です。</p>
+
+      <p><span class="kw-blank" data-a="S">S</span>波は主要動を起こす、速さの遅い波(3〜4km/秒)です。進行方向に対して垂直に振動する<span class="kw-blank" data-a="横">横</span>波です。</p>
+
+      <div class="tri-fig">
+        <div class="tf-box"><img src="pha_bane.png" alt="P波を再現するばねの実験"><div class="tf-cap">P波のモデル実験(ばね)</div></div>
+        <div class="tf-box"><img src="sha_rope.png" alt="S波を再現するロープの実験"><div class="tf-cap">S波のモデル実験(ロープ)</div></div>
+      </div>
+
+      <p>地震が発生すると、震源からP波とS波が<span class="kw-blank" data-a="同時に">同時に</span>発生しますが、観測地まで届くのはP波の方が早く、S波の方が遅れて届きます。このP波とS波の到達時間の差を<span class="kw-blank" data-a="初期微動継続時間">初期微動継続時間</span>といいます。</p>
+
+      <div class="info-note">
+        <span class="label">【重要】</span>
+        <p style="margin:0;">P波の「P」は「初期(Primary)」の意味、S波の「S」は「2番目(Secondary)」の意味です。P波が先に届いて小さなゆれ(初期微動)が起き、少し遅れてS波が届いて大きなゆれ(主要動)が起こります。</p>
+      </div>
+    </div>
+
+    <div class="point-box">
+      <span class="label">★ 覚えよう!</span>
+      <ul>
+        <li>P波……初期微動・速い(7〜8km/秒)・縦波</li>
+        <li>S波……主要動・遅い(3〜4km/秒)・横波</li>
+        <li>初期微動継続時間 ＝ S波が届いた時刻 − P波が届いた時刻</li>
+      </ul>
+    </div>
+
+    <div class="word-bank-inline">
+      <div class="wb-title">📚 語群 ― タップして選び、説明文の空欄をタップ!</div>
+      <div class="wb-words"></div>
+    </div>
+  </div>
+
+  <div class="minitest-block">
+    <div class="mt-block-title">✏️ ミニテスト(全5問)</div>
+
+    <div class="minitest" data-correct="o">
+      <div class="mt-stem"><span class="mt-num">問1</span>P波はS波よりも速さが速い。</div>
+      <div class="mt-choices"><button class="mt-c" data-v="o">○</button><button class="mt-c" data-v="x">×</button></div>
+      <div class="mt-exp">○ 正解です。P波は7〜8km/秒、S波は3〜4km/秒で、P波の方が速く伝わります。</div>
+    </div>
+
+    <div class="minitest" data-correct="x">
+      <div class="mt-stem"><span class="mt-num">問2</span>S波は、進行方向と同じ方向に振動する縦波である。</div>
+      <div class="mt-choices"><button class="mt-c" data-v="o">○</button><button class="mt-c" data-v="x">×</button></div>
+      <div class="mt-exp">× S波は進行方向に対して垂直に振動する横波です。進行方向と同じ方向に振動する縦波はP波です。</div>
+    </div>
+
+    <div class="q4" data-correct="b">
+      <div class="q4-stem"><span class="q4-num">問3</span>初期微動を引き起こす波はどちらか。</div>
+      <div class="q4-choices">
+        <button class="q4-c" data-v="a">ア:S波</button>
+        <button class="q4-c" data-v="b">イ:P波</button>
+        <button class="q4-c" data-v="c">ウ:両方とも同時に初期微動を起こす</button>
+        <button class="q4-c" data-v="d">エ:どちらでもない</button>
+      </div>
+      <div class="q4-exp">正解は<strong>イ</strong>。速さの速いP波が先に届き、初期微動を引き起こします。</div>
+    </div>
+
+    <div class="q4" data-correct="d">
+      <div class="q4-stem"><span class="q4-num">問4</span>初期微動継続時間の説明として正しいものはどれか。</div>
+      <div class="q4-choices">
+        <button class="q4-c" data-v="a">ア:地震が発生してから観測されるまでの時間</button>
+        <button class="q4-c" data-v="b">イ:主要動が続く時間</button>
+        <button class="q4-c" data-v="c">ウ:震源の深さを表す時間</button>
+        <button class="q4-c" data-v="d">エ:P波とS波の到達時刻の差</button>
+      </div>
+      <div class="q4-exp">正解は<strong>エ</strong>。初期微動継続時間は、P波が届いてからS波が届くまでの時間差のことです。</div>
+    </div>
+
+    <div class="q4" data-correct="a">
+      <div class="q4-stem"><span class="q4-num">問5</span>P波とS波について正しい組み合わせはどれか。</div>
+      <div class="q4-choices">
+        <button class="q4-c" data-v="a">ア:P波=縦波・速い／S波=横波・遅い</button>
+        <button class="q4-c" data-v="b">イ:P波=横波・速い／S波=縦波・遅い</button>
+        <button class="q4-c" data-v="c">ウ:P波=縦波・遅い／S波=横波・速い</button>
+        <button class="q4-c" data-v="d">エ:P波=横波・遅い／S波=縦波・速い</button>
+      </div>
+      <div class="q4-exp">正解は<strong>ア</strong>。P波は縦波で速く、S波は横波で遅く伝わります。</div>
+    </div>
+
+    <div class="mt-block-result"></div>
+    <div style="text-align:center;"><button class="mt-block-reset">↻ もう一度</button></div>
+  </div>
+
+  <div class="ranking">
+    <h3>🏆 ベストタイム</h3>
+    <ul id="ranking-js1-u2" class="ranking-list"></ul>
+    <button class="btn outline" onclick="clearRanking('js1-u2')" style="margin-top:6px;font-size:12px;padding:4px 12px;">記録をリセット</button>
+  </div>
+</div>
+
+
+<!-- ================================================== -->
+<!--  単元3:震度とマグニチュード                        -->
+<!-- ================================================== -->
+<div class="unit">
+  <div class="unit-title"><span class="num">3</span>震度とマグニチュード</div>
+
+  <div class="stage challenge" data-ch-id="js1-u3" data-target="#js1-u3-readbox">
+    <div class="stage-head">
+      <span class="stage-label read">📖 説明</span>
+      <div class="stage-actions">
+        <span class="challenge-timer" style="display:none;">0:00.0</span>
+        <button class="ch-btn start">🎯 チャレンジ開始</button>
+        <button class="ch-btn judge" style="display:none;">✓ 判定</button>
+        <button class="ch-btn example" style="display:none;">📖 手本</button>
+        <button class="ch-btn reset" style="display:none;">↻ リセット</button>
+        <button class="ch-btn cancel" style="display:none;">⏹ 中断</button>
+      </div>
+    </div>
+
+    <div class="read-box" id="js1-u3-readbox">
+      <p><span class="kw-blank" data-a="震度">震度</span>は、ある場所の地震のゆれの大きさを<span class="kw-blank" data-a="10">10</span>段階で表します(震度計で測定)。</p>
+
+      <table class="tbl">
+        <thead><tr><th>震度</th><th>ゆれや被害のようす</th></tr></thead>
+        <tbody>
+          <tr><td>0</td><td>人はゆれを感じない</td></tr>
+          <tr><td>1〜2</td><td>屋内の人の一部〜多くがわずかなゆれを感じる</td></tr>
+          <tr><td>3〜4</td><td>屋内のほとんどの人が感じ、棚の食器類が音をたてたり、置き物が倒れたりする</td></tr>
+          <tr><td>5弱〜5強</td><td>窓ガラスが割れたり、重い家具が倒れたりする</td></tr>
+          <tr><td>6弱〜6強</td><td>立っていられず、耐震性の低い建物が壊れる</td></tr>
+          <tr><td>7</td><td>ほとんどの建物が壊れ、広い地域で電気・ガス・水道が止まる</td></tr>
+        </tbody>
+      </table>
+
+      <p><span class="kw-blank" data-a="マグニチュード">マグニチュード</span>は、地震の規模の大きさ(放出エネルギーの大きさ)を表す単位で、記号は<span class="kw-blank" data-a="M">M</span>です。マグニチュードが1つ増加すると、エネルギー量は約<span class="kw-blank" data-a="32">32</span>倍大きくなります。</p>
+
+      <div class="info-note">
+        <span class="label">【重要】</span>
+        <p style="margin:0;">震度は「その場所のゆれの大きさ」、マグニチュードは「地震そのものの規模」です。同じ地震でも、震源からの距離や地盤によって震度は場所ごとに異なりますが、マグニチュードは1つの地震に対して1つの値に決まります。</p>
+      </div>
+    </div>
+
+    <div class="point-box">
+      <span class="label">★ 覚えよう!</span>
+      <ul>
+        <li>震度……その場所のゆれの大きさ。10段階で表す</li>
+        <li>マグニチュード(M)……地震の規模(エネルギー)の大きさ。1つ増えるとエネルギーは約32倍</li>
+        <li>震度は場所によって異なるが、マグニチュードは1つの地震に1つだけ決まる</li>
+      </ul>
+    </div>
+
+    <div class="word-bank-inline">
+      <div class="wb-title">📚 語群 ― タップして選び、説明文の空欄をタップ!</div>
+      <div class="wb-words"></div>
+    </div>
+  </div>
+
+  <div class="minitest-block">
+    <div class="mt-block-title">✏️ ミニテスト(全4問)</div>
+
+    <div class="minitest" data-correct="x">
+      <div class="mt-stem"><span class="mt-num">問1</span>マグニチュードは、場所によって異なるゆれの大きさを表す。</div>
+      <div class="mt-choices"><button class="mt-c" data-v="o">○</button><button class="mt-c" data-v="x">×</button></div>
+      <div class="mt-exp">× 場所によって異なるのは震度です。マグニチュードは1つの地震に対して1つだけ決まる、地震の規模を表す値です。</div>
+    </div>
+
+    <div class="minitest" data-correct="o">
+      <div class="mt-stem"><span class="mt-num">問2</span>震度は10段階で表される。</div>
+      <div class="mt-choices"><button class="mt-c" data-v="o">○</button><button class="mt-c" data-v="x">×</button></div>
+      <div class="mt-exp">○ 正解です。震度0〜7(5と6はそれぞれ弱・強がある)の10段階で表されます。</div>
+    </div>
+
+    <div class="q4" data-correct="c">
+      <div class="q4-stem"><span class="q4-num">問3</span>マグニチュードが1つ増加すると、エネルギー量はおよそ何倍になるか。</div>
+      <div class="q4-choices">
+        <button class="q4-c" data-v="a">ア:2倍</button>
+        <button class="q4-c" data-v="b">イ:10倍</button>
+        <button class="q4-c" data-v="c">ウ:32倍</button>
+        <button class="q4-c" data-v="d">エ:100倍</button>
+      </div>
+      <div class="q4-exp">正解は<strong>ウ</strong>。マグニチュードが1増えるとエネルギー量は約32倍になります。</div>
+    </div>
+
+    <div class="q4" data-correct="b">
+      <div class="q4-stem"><span class="q4-num">問4</span>震度とマグニチュードの違いの説明として正しいものはどれか。</div>
+      <div class="q4-choices">
+        <button class="q4-c" data-v="a">ア:震度もマグニチュードも地震の規模を表す同じもの</button>
+        <button class="q4-c" data-v="b">イ:震度はその場所のゆれの大きさ、マグニチュードは地震の規模</button>
+        <button class="q4-c" data-v="c">ウ:震度は地震の規模、マグニチュードはその場所のゆれの大きさ</button>
+        <button class="q4-c" data-v="d">エ:どちらも震源からの距離を表す</button>
+      </div>
+      <div class="q4-exp">正解は<strong>イ</strong>。震度は場所ごとのゆれの大きさ、マグニチュードは地震そのものの規模(エネルギー)を表します。</div>
+    </div>
+
+    <div class="mt-block-result"></div>
+    <div style="text-align:center;"><button class="mt-block-reset">↻ もう一度</button></div>
+  </div>
+
+  <div class="ranking">
+    <h3>🏆 ベストタイム</h3>
+    <ul id="ranking-js1-u3" class="ranking-list"></ul>
+    <button class="btn outline" onclick="clearRanking('js1-u3')" style="margin-top:6px;font-size:12px;padding:4px 12px;">記録をリセット</button>
+  </div>
+</div>
+
+
+<!-- ================================================== -->
+<!--  単元4:地震の計算問題                              -->
+<!-- ================================================== -->
+<div class="unit">
+  <div class="unit-title"><span class="num">4</span>地震の計算問題</div>
+
+  <div class="stage challenge" data-ch-id="js1-u4" data-target="#js1-u4-readbox">
+    <div class="stage-head">
+      <span class="stage-label read">📖 説明</span>
+      <div class="stage-actions">
+        <span class="challenge-timer" style="display:none;">0:00.0</span>
+        <button class="ch-btn start">🎯 チャレンジ開始</button>
+        <button class="ch-btn judge" style="display:none;">✓ 判定</button>
+        <button class="ch-btn example" style="display:none;">📖 手本</button>
+        <button class="ch-btn reset" style="display:none;">↻ リセット</button>
+        <button class="ch-btn cancel" style="display:none;">⏹ 中断</button>
+      </div>
+    </div>
+
+    <div class="read-box" id="js1-u4-readbox">
+      <p>観測地から震源までの距離は、<span class="kw-blank" data-a="初期微動継続時間">初期微動継続時間</span>に<span class="kw-blank" data-a="比例">比例</span>します。これを利用すると、震源からの距離や地震発生時刻を計算で求めることができます。</p>
+
+      <div class="tri-fig">
+        <div class="tf-box"><img src="shokikeizoku_A.png" alt="初期微動継続時間の計算図A"><div class="tf-cap">距離と初期微動継続時間の関係</div></div>
+        <div class="tf-box"><img src="shokikeizoku_B.png" alt="初期微動継続時間の計算図B"><div class="tf-cap">相似の三角形を利用した計算</div></div>
+      </div>
+
+      <div class="calc-box">
+        <div class="q">〈例題〉観測地Aと震源までの距離は80kmで、A点の初期微動継続時間は10秒であった。震源までの距離が160kmのB地点の初期微動継続時間は何秒か。</div>
+        <p>解)震源からの距離は初期微動継続時間に比例するので、</p>
+        <p>80km：160km ＝ 10秒：χ秒</p>
+        <p class="a">答え) χ＝<span class="kw-blank" data-a="20">20</span>秒</p>
+      </div>
+
+      <div class="calc-box">
+        <div class="q">〈例題〉ある地震で、震源から40kmの地点の初期微動継続時間は5秒であった。P波の速さが8.0km/秒のとき、この地震のP波が伝わる速さの求め方は?</div>
+        <p>解)P波の速さ ＝ 震源からの距離 ÷ P波が伝わる時間</p>
+        <p>例えば10秒で80km進むP波なら、80km÷10秒＝<span class="kw-blank" data-a="8.0">8.0</span>km/秒</p>
+      </div>
+    </div>
+
+    <div class="point-box">
+      <span class="label">★ 覚えよう!</span>
+      <ul>
+        <li>震源からの距離 ∝ 初期微動継続時間(比例の関係)</li>
+        <li>速さ(km/秒) ＝ 距離(km) ÷ 時間(秒)</li>
+        <li>地震発生時刻 ＝ P波の観測時刻 − (震源までの距離 ÷ P波の速さ)</li>
+      </ul>
+    </div>
+
+    <div class="word-bank-inline">
+      <div class="wb-title">📚 語群 ― タップして選び、説明文の空欄をタップ!</div>
+      <div class="wb-words"></div>
+    </div>
+  </div>
+
+  <div class="minitest-block">
+    <div class="mt-block-title">✏️ ミニテスト(全5問)</div>
+
+    <div class="minitest" data-correct="o">
+      <div class="mt-stem"><span class="mt-num">問1</span>震源からの距離は、初期微動継続時間に比例する。</div>
+      <div class="mt-choices"><button class="mt-c" data-v="o">○</button><button class="mt-c" data-v="x">×</button></div>
+      <div class="mt-exp">○ 正解です。震源からの距離が大きいほど、初期微動継続時間も長くなります。</div>
+    </div>
+
+    <div class="q4" data-correct="b">
+      <div class="q4-stem"><span class="q4-num">問2</span>P波の速さは図より、10秒で80km進むことがわかった。P波が伝わる速さは何km/秒か。</div>
+      <div class="q4-choices">
+        <button class="q4-c" data-v="a">ア:0.8km/秒</button>
+        <button class="q4-c" data-v="b">イ:8.0km/秒</button>
+        <button class="q4-c" data-v="c">ウ:80km/秒</button>
+        <button class="q4-c" data-v="d">エ:800km/秒</button>
+      </div>
+      <div class="q4-exp">正解は<strong>イ</strong>。80km÷10秒＝8.0km/秒です。</div>
+    </div>
+
+    <div class="q4" data-correct="c">
+      <div class="q4-stem"><span class="q4-num">問3</span>震源から40kmの地点で初期微動継続時間が5秒のとき、震源から80kmの地点の初期微動継続時間は何秒か。</div>
+      <div class="q4-choices">
+        <button class="q4-c" data-v="a">ア:2.5秒</button>
+        <button class="q4-c" data-v="b">イ:5秒</button>
+        <button class="q4-c" data-v="c">ウ:10秒</button>
+        <button class="q4-c" data-v="d">エ:20秒</button>
+      </div>
+      <div class="q4-exp">正解は<strong>ウ</strong>。40km:5秒＝80km:χ秒より、χ＝10秒です。震源からの距離が2倍になると、初期微動継続時間も2倍になります。</div>
+    </div>
+
+    <div class="q4" data-correct="a">
+      <div class="q4-stem"><span class="q4-num">問4</span>震源から40kmの地点で初期微動継続時間が5秒のとき、初期微動継続時間が15秒の地点の震源からの距離は何kmか。</div>
+      <div class="q4-choices">
+        <button class="q4-c" data-v="a">ア:120km</button>
+        <button class="q4-c" data-v="b">イ:60km</button>
+        <button class="q4-c" data-v="c">ウ:45km</button>
+        <button class="q4-c" data-v="d">エ:200km</button>
+      </div>
+      <div class="q4-exp">正解は<strong>ア</strong>。40km:5秒＝y km:15秒より、5y＝40×15、y＝120kmです。</div>
+    </div>
+
+    <div class="q4" data-correct="d">
+      <div class="q4-stem"><span class="q4-num">問5</span>ある地点で、P波が10時10分32秒、S波が10時10分40秒に観測された。この地点の初期微動継続時間は何秒か。</div>
+      <div class="q4-choices">
+        <button class="q4-c" data-v="a">ア:32秒</button>
+        <button class="q4-c" data-v="b">イ:40秒</button>
+        <button class="q4-c" data-v="c">ウ:72秒</button>
+        <button class="q4-c" data-v="d">エ:8秒</button>
+      </div>
+      <div class="q4-exp">正解は<strong>エ</strong>。初期微動継続時間はS波とP波の到達時刻の差なので、10時10分40秒−10時10分32秒＝8秒です。</div>
+    </div>
+
+    <div class="mt-block-result"></div>
+    <div style="text-align:center;"><button class="mt-block-reset">↻ もう一度</button></div>
+  </div>
+
+  <div class="ranking">
+    <h3>🏆 ベストタイム</h3>
+    <ul id="ranking-js1-u4" class="ranking-list"></ul>
+    <button class="btn outline" onclick="clearRanking('js1-u4')" style="margin-top:6px;font-size:12px;padding:4px 12px;">記録をリセット</button>
+  </div>
+</div>
+
+
+<!-- ================================================== -->
+<!--  単元末:次のアクション                              -->
+<!-- ================================================== -->
+<div class="next-actions">
+  <h3>🎉 第2講、おつかれさま!</h3>
+  <p>次は「地層と大地の変動」について学んでいきましょう。</p>
+  <div class="links">
+    <a href="index.html">📊 単元表へ戻る</a>
+  </div>
+</div>
+
+<nav class="pagenav">
+  <a href="kazan1.html">
+    <span class="label">◀ BACK</span>
+    <span class="title">第1講 火山</span>
+  </a>
+  <a href="chisou1.html" class="next">
+    <span class="label">NEXT ▶</span>
+    <span class="title">第3講 地層と大地の変動</span>
+  </a>
+</nav>
+
+</main>
+</div>
+
+<!-- 共通モーダル類 -->
+<div class="example-modal" id="example-modal" onclick="if(event.target===this) this.classList.remove('show')">
+  <div class="example-content" id="example-content"></div>
+</div>
+
+<div class="pass-overlay" id="pass-overlay">
+  <div class="pass-dialog">
+    <div class="pass-emoji">🎉</div>
+    <h2>合 格!</h2>
+    <p>すべて正解!よくできました!</p>
+    <div class="pass-time" id="pass-time-display">0:00.0</div>
+    <p style="font-size:13px;color:#666;margin-top:6px;">ランキングに記録されました</p>
+    <div class="pass-actions">
+      <button class="btn outline" onclick="document.getElementById('pass-overlay').classList.remove('show')">閉じる</button>
+    </div>
+  </div>
+</div>
+
+<div class="fail-toast" id="fail-toast"></div>
+<div class="confetti" id="confetti"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
