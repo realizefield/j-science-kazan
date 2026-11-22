@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>入試問題 第2講 地震 | GAMBA中学理科</title>
+<link rel="stylesheet" href="app.css">
+<style>
+.src-note{background:#FFF3E0;padding:10px 14px;border-radius:8px;color:#5D4037;font-size:15px;border-left:4px solid #FF8C42;}
+.ex-text{background:#fff;border:2px solid #FFE0B2;border-radius:12px;padding:14px 18px;line-height:1.9;color:#2C3E50;font-size:15px;margin:14px 0;}
+.ex-table{border-collapse:collapse;margin:12px auto;background:#fff;font-size:14.5px;max-width:100%;}
+.ex-table th,.ex-table td{border:1.5px solid #8D6E63;padding:7px 12px;text-align:center;}
+.ex-table th{background:#FFF3E0;color:#5D4037;}
+.tip-box{background:#E8F5E9;border-left:4px solid #43A047;border-radius:8px;padding:12px 16px;margin:16px 0;line-height:1.8;font-size:14.5px;color:#2E4A31;}
+.tip-box strong{color:#2E7D32;}
+
+/* 段階ヒント */
+.hq{background:#fff;border:2px solid #FFE0B2;border-radius:14px;padding:16px 18px;margin:16px 0;box-shadow:0 2px 6px rgba(0,0,0,.05);}
+.hq-tag{display:inline-block;background:#FF8C42;color:#fff;font-weight:bold;font-size:13px;padding:2px 12px;border-radius:14px;margin-bottom:8px;}
+.hq-q{font-size:15.5px;line-height:1.8;color:#2C3E50;font-weight:bold;}
+.hq-hint{margin-top:10px;padding:10px 14px;border-radius:8px;background:#FFFDE7;border-left:4px solid #FBC02D;line-height:1.8;font-size:14.5px;color:#5D4037;animation:hqfade .35s ease;}
+.hq-hint .lv{font-weight:bold;color:#F57F17;margin-right:6px;}
+.hq-answer{margin-top:12px;padding:12px 16px;border-radius:8px;background:#E3F2FD;border-left:4px solid #1E88E5;line-height:1.9;font-size:15px;color:#1B3A57;animation:hqfade .35s ease;}
+.hq-answer .ans{font-size:18px;font-weight:bold;color:#C62828;}
+.hq-btns{margin-top:12px;display:flex;gap:10px;flex-wrap:wrap;align-items:center;}
+.hq-btn{background:#FF8C42;color:#fff;border:none;border-radius:20px;padding:8px 20px;font-size:14px;font-weight:bold;cursor:pointer;font-family:inherit;transition:.2s;}
+.hq-btn:hover{background:#E67838;}
+.hq-btn.ans-btn{background:#1E88E5;}
+.hq-btn.ans-btn:hover{background:#1565C0;}
+.hq-reset{background:#fff;color:#8D6E63;border:2px solid #D7CCC8;border-radius:20px;padding:6px 14px;font-size:13px;cursor:pointer;font-family:inherit;}
+.hq-reset:hover{background:#EFEBE9;}
+.hq-count{font-size:12.5px;color:#8D6E63;}
+.hq [hidden]{display:none !important;}
+@keyframes hqfade{from{opacity:0;transform:translateY(-4px);}to{opacity:1;transform:none;}}
+.tl-fig{text-align:center;margin:10px 0 4px;}
+.tl-fig svg{max-width:100%;height:auto;}
+</style>
+</head>
+<body data-page="jishin1_nyushi">
+
+<nav class="topnav">
+  <span class="brand">🌋 GAMBA 中学理科 火山・地震・地形</span>
+  <span class="sep">|</span>
+  <a href="index.html">📊 単元表</a>
+  <a href="jishin1.html">レッスンへ戻る</a>
+</nav>
+
+<div class="wrap">
+
+<header class="hero">
+  <div class="crumb">第2講 / 入試問題</div>
+  <h1>入試問題:地震の計算 <span class="stars">★★★</span></h1>
+  <p class="sub">実際の入試に出た問題に挑戦しましょう。難しいので、<strong>ヒントを1つずつ</strong>見ながら進められます。まず自分で考えて、困ったら「ヒント」を押してください。</p>
+</header>
+
+<main>
+
+<div class="tip-box">
+  <strong>💡 この2問を解くコツ</strong><br>
+  ① 表から波の速さを出すときは <strong>速さ = 距離の差 ÷ 時刻の差</strong>(2地点を選んで、差を使う)<br>
+  ② 速さがわかったら、<strong>時間 = 距離 ÷ 速さ</strong> で「震源から届くまでの時間」を出す<br>
+  ③ 「地震が発生した時刻」は、<strong>到着時刻 − 届くまでの時間</strong>
+</div>
+
+<!-- ================================================== -->
+<section class="unit">
+  <div class="unit-title"><span class="num">1</span>P波の速さと地震の発生時刻</div>
+  <p class="src-note">📖 <strong>入試問題 より</strong>(青森県)</p>
+
+  <div class="ex-text">
+    次の表は、ある場所で発生した地震について、地点X〜Zにおける、震源からの距離とP波によるゆれが始まった時刻を示したものである。後の各問いに答えよ。ただし、P波は一定の速さで伝わったものとする。
+    <table class="ex-table">
+      <tr><th>地点</th><th>震源からの距離</th><th>P波によるゆれが始まった時刻</th></tr>
+      <tr><td>X</td><td>72km</td><td>10時25分20秒</td></tr>
+      <tr><td>Y</td><td>108km</td><td>10時25分26秒</td></tr>
+      <tr><td>Z</td><td>180km</td><td>10時25分38秒</td></tr>
+    </table>
+    (1) P波によるゆれの名称を書け。<br>
+    (2) この地震が発生した時刻は、10時何分何秒か。
+  </div>
+
+  <div class="hq" data-n="1">
+    <span class="hq-tag">問(1)</span>
+    <div class="hq-q">P波によるゆれの名称を書きなさい。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント1</span>P波とS波では、どちらが先に届くでしょう。先に届くのはP波です。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント2</span>先に届く波が起こす「最初の小さなゆれ」の名前です。あとから来る大きなゆれは「主要動」でしたね。</div>
+    <div class="hq-answer" hidden>答え:<span class="ans">初期微動</span><br>P波(速い波)が起こす最初の小さなゆれが初期微動、S波(遅い波)が起こす大きなゆれが主要動です。</div>
+    <div class="hq-btns"><button class="hq-btn">💡 ヒント1を見る</button><button class="hq-reset" hidden>↻ とじる</button></div>
+  </div>
+
+  <div class="hq" data-n="2">
+    <span class="hq-tag">問(2) ステップ1</span>
+    <div class="hq-q">まず、P波の速さ(km/s)を求めましょう。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント1</span>速さ = 距離 ÷ 時間 です。でも、地震が起きた時刻がまだわからないので、「震源から何秒かかったか」は直接出せません。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント2</span>そこで<strong>2つの地点の差</strong>を使います。たとえばXとYを選んで、「距離の差」と「P波が届いた時刻の差」を出してみましょう。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント3</span>距離の差:108−72=36km<br>時刻の差:10時25分26秒 − 10時25分20秒 = 6秒<br>この「36kmを6秒で進んだ」から速さを求めます。</div>
+    <div class="hq-answer" hidden>答え:<span class="ans">6 km/s</span><br>36km ÷ 6秒 = 6km/s(XとZ、YとZで計算しても同じ6km/sになります)</div>
+    <div class="hq-btns"><button class="hq-btn">💡 ヒント1を見る</button><button class="hq-reset" hidden>↻ とじる</button></div>
+  </div>
+
+  <div class="hq" data-n="3">
+    <span class="hq-tag">問(2) ステップ2</span>
+    <div class="hq-q">震源から72kmのX地点に、P波が届くまでには何秒かかりますか。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント1</span>時間 = 距離 ÷ 速さ です。ステップ1で求めた速さを使います。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント2</span>距離は72km、速さは6km/s です。72 ÷ 6 を計算しましょう。</div>
+    <div class="hq-answer" hidden>答え:<span class="ans">12秒</span><br>72km ÷ 6km/s = 12秒。地震が発生してから12秒後にX地点にP波が届きました。</div>
+    <div class="hq-btns"><button class="hq-btn">💡 ヒント1を見る</button><button class="hq-reset" hidden>↻ とじる</button></div>
+  </div>
+
+  <div class="hq" data-n="4">
+    <span class="hq-tag">問(2) 答え</span>
+    <div class="hq-q">この地震が発生した時刻は、10時何分何秒ですか。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント1</span>X地点にP波が届いたのは10時25分20秒。それは、地震発生の12秒<strong>後</strong>でした。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント2</span>発生時刻は、10時25分20秒の<strong>12秒前</strong>です。「分」をまたがないので、20秒 − 12秒 を計算するだけです。</div>
+    <div class="hq-answer" hidden>答え:<span class="ans">10時25分8秒</span><br>10時25分20秒 − 12秒 = 10時25分8秒。<br>(確かめ:Y地点は108÷6=18秒後 → 10時25分8秒+18秒=10時25分26秒 ✓)</div>
+    <div class="hq-btns"><button class="hq-btn">💡 ヒント1を見る</button><button class="hq-reset" hidden>↻ とじる</button></div>
+  </div>
+</section>
+
+<!-- ================================================== -->
+<section class="unit">
+  <div class="unit-title"><span class="num">2</span>P波・S波の速さと緊急地震速報</div>
+  <p class="src-note">📖 <strong>入試問題 より</strong>(大分県)　<span style="color:#C62828;font-weight:bold;">★★★ 難問</span></p>
+
+  <div class="ex-text">
+    次の表は、ある地震のA〜Cの3地点における地震計の観測記録をまとめたものである。後の各問いに答えよ。ただし、この地震によって発生した初期微動と主要動を起こす波は、それぞれ一定の速さで伝わるものとする。
+    <table class="ex-table">
+      <tr><th>地点</th><th>震源からの距離(km)</th><th>初期微動が始まった時刻</th><th>主要動が始まった時刻</th></tr>
+      <tr><td>A</td><td>56</td><td>10時53分50秒</td><td>10時53分56秒</td></tr>
+      <tr><td>B</td><td>( X )</td><td>10時53分58秒</td><td>10時54分10秒</td></tr>
+      <tr><td>C</td><td>140</td><td>10時54分02秒</td><td>10時54分17秒</td></tr>
+    </table>
+    (1) 表の空欄( X )に当てはまる数値を求めよ。<br>
+    (2) 表の地震の発生時刻は、何時何分何秒か。<br>
+    (3) 震源からの距離が21kmの地点で初期微動を感知したと同時に、緊急地震速報が発表されたとすると、震源からの距離が124kmの地点で主要動が始まるのは、緊急地震速報が発表されてから何秒後か。
+  </div>
+
+  <div class="hq" data-n="5">
+    <span class="hq-tag">問(1) ステップ1</span>
+    <div class="hq-q">初期微動を起こす波(P波)の速さ(km/s)を求めましょう。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント1</span>地震の発生時刻がわからないので、<strong>距離が判明している2地点</strong>(AとC)の差を使います。「初期微動が始まった時刻」の列を見ましょう。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント2</span>AとCの距離の差:140−56=84km<br>初期微動が始まった時刻の差:10時54分02秒 − 10時53分50秒 = ?秒<br>(分をまたぐので注意:50秒→60秒まで10秒、そこから2秒)</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント3</span>時刻の差は12秒です。84kmを12秒で進んだので、84 ÷ 12 を計算します。</div>
+    <div class="hq-answer" hidden>答え:<span class="ans">7 km/s</span><br>84km ÷ 12秒 = 7km/s</div>
+    <div class="hq-btns"><button class="hq-btn">💡 ヒント1を見る</button><button class="hq-reset" hidden>↻ とじる</button></div>
+  </div>
+
+  <div class="hq" data-n="6">
+    <span class="hq-tag">問(1) 答え</span>
+    <div class="hq-q">B地点の震源からの距離( X )は何kmですか。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント1</span>距離がわかっているA地点(56km)と比べます。AとBで、初期微動が始まった時刻はどれだけ違うでしょう。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント2</span>Aは10時53分50秒、Bは10時53分58秒なので、Bのほうが8秒遅く届いています。その8秒の間に、P波(7km/s)は何km進むでしょうか。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント3</span>7km/s × 8秒 = 56km。BはAより<strong>56km遠い</strong>ことになります。Aは56kmでした。</div>
+    <div class="hq-answer" hidden>答え:<span class="ans">112 km</span><br>56km + 56km = 112km</div>
+    <div class="hq-btns"><button class="hq-btn">💡 ヒント1を見る</button><button class="hq-reset" hidden>↻ とじる</button></div>
+  </div>
+
+  <div class="hq" data-n="7">
+    <span class="hq-tag">問(2)</span>
+    <div class="hq-q">この地震の発生時刻は、何時何分何秒ですか。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント1</span>距離のわかっているA地点(56km)に注目します。AにP波が届くまで何秒かかったか、を求めましょう。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント2</span>時間 = 距離 ÷ 速さ = 56 ÷ 7 = 8秒。AにP波が届いたのは10時53分50秒なので、その8秒前が発生時刻です。</div>
+    <div class="hq-answer" hidden>答え:<span class="ans">10時53分42秒</span><br>10時53分50秒 − 8秒 = 10時53分42秒</div>
+    <div class="hq-btns"><button class="hq-btn">💡 ヒント1を見る</button><button class="hq-reset" hidden>↻ とじる</button></div>
+  </div>
+
+  <div class="hq" data-n="8">
+    <span class="hq-tag">問(3) ステップ1</span>
+    <div class="hq-q">震源から21kmの地点でP波を感知し、緊急地震速報が発表されました。これは、地震発生の何秒後ですか。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント1</span>「初期微動を感知したと同時に発表」とあるので、21km地点にP波が届いた時刻が、速報の発表時刻です。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント2</span>P波の速さは7km/s。21km ÷ 7km/s を計算しましょう。</div>
+    <div class="hq-answer" hidden>答え:<span class="ans">3秒後</span><br>21 ÷ 7 = 3秒。地震発生の3秒後に速報が出ます。</div>
+    <div class="hq-btns"><button class="hq-btn">💡 ヒント1を見る</button><button class="hq-reset" hidden>↻ とじる</button></div>
+  </div>
+
+  <div class="hq" data-n="9">
+    <span class="hq-tag">問(3) ステップ2</span>
+    <div class="hq-q">主要動を起こす波(S波)の速さ(km/s)を求めましょう。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント1</span>P波の速さを求めたときと同じ方法です。今度は表の「<strong>主要動が始まった時刻</strong>」の列を使います。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント2</span>AとCの距離の差は84km。主要動の時刻の差:10時54分17秒 − 10時53分56秒 = ?秒(分をまたぐので注意)</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント3</span>時刻の差は21秒です。84kmを21秒で進んだので、84 ÷ 21 を計算します。</div>
+    <div class="hq-answer" hidden>答え:<span class="ans">4 km/s</span><br>84km ÷ 21秒 = 4km/s(P波より遅いので、あとから届く主要動になります)</div>
+    <div class="hq-btns"><button class="hq-btn">💡 ヒント1を見る</button><button class="hq-reset" hidden>↻ とじる</button></div>
+  </div>
+
+  <div class="hq" data-n="10">
+    <span class="hq-tag">問(3) ステップ3</span>
+    <div class="hq-q">震源から124kmの地点に、S波(主要動)が届くのは、地震発生の何秒後ですか。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント1</span>時間 = 距離 ÷ 速さ です。今度は「S波」の速さ(4km/s)を使います。P波の7km/sと間違えないように注意しましょう。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント2</span>距離は124km、速さは4km/s。124 ÷ 4 を計算します。</div>
+    <div class="hq-answer" hidden>答え:<span class="ans">31秒後</span><br>124 ÷ 4 = 31秒。地震発生の31秒後に、124km地点で主要動が始まります。</div>
+    <div class="hq-btns"><button class="hq-btn">💡 ヒント1を見る</button><button class="hq-reset" hidden>↻ とじる</button></div>
+  </div>
+
+  <div class="hq" data-n="11">
+    <span class="hq-tag">問(3) 答え</span>
+    <div class="hq-q">124km地点で主要動が始まるのは、緊急地震速報が発表されてから何秒後ですか。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント1</span>ここまでで「地震発生から」の時間が2つ出ています。<br>・速報が発表されたのは、発生の<strong>3秒後</strong><br>・124km地点に主要動が届くのは、発生の<strong>31秒後</strong></div>
+    <div class="hq-hint" hidden><span class="lv">ヒント2</span>下の図のように、発生を0秒として時間の線に並べてみましょう。「速報の発表」から「主要動の開始」までの長さを求めます。
+      <div class="tl-fig">
+        <svg viewBox="0 0 520 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="時間の線:発生0秒、速報3秒、主要動31秒">
+          <line x1="30" y1="60" x2="490" y2="60" stroke="#8D6E63" stroke-width="3"/>
+          <circle cx="30" cy="60" r="7" fill="#FF8C42"/><circle cx="82" cy="60" r="7" fill="#43A047"/><circle cx="490" cy="60" r="7" fill="#E53935"/>
+          <text x="30" y="92" text-anchor="middle" font-size="13" fill="#5D4037">地震発生</text><text x="30" y="108" text-anchor="middle" font-size="13" fill="#5D4037">0秒</text>
+          <text x="82" y="38" text-anchor="middle" font-size="13" fill="#2E7D32">速報の発表</text><text x="82" y="92" text-anchor="middle" font-size="13" fill="#5D4037">3秒後</text>
+          <text x="490" y="38" text-anchor="middle" font-size="13" fill="#C62828">主要動の開始</text><text x="490" y="92" text-anchor="middle" font-size="13" fill="#5D4037">31秒後</text>
+          <text x="286" y="50" text-anchor="middle" font-size="15" font-weight="bold" fill="#1E88E5">31 − 3 = ?秒</text>
+        </svg>
+      </div></div>
+    <div class="hq-answer" hidden>答え:<span class="ans">28秒後</span><br>31 − 3 = 28秒。<br>緊急地震速報は、主要動(大きなゆれ)が来る<strong>28秒前</strong>に届くことになります。これが緊急地震速報のしくみです。</div>
+    <div class="hq-btns"><button class="hq-btn">💡 ヒント1を見る</button><button class="hq-reset" hidden>↻ とじる</button></div>
+  </div>
+</section>
+
+<div class="next-actions">
+  <h3>🎉 おつかれさま!</h3>
+  <p>入試問題の2問はどうでしたか?ヒントなしで解けるようになるまで、もう一度チャレンジしてみましょう。</p>
+  <div class="links">
+    <a href="jishin1_check.html">📋 確認問題へ</a>
+    <a href="jishin1.html">📖 レッスンに戻る</a>
+    <a href="index.html">📊 単元表へ</a>
+  </div>
+</div>
+
+<nav class="pagenav">
+  <a href="jishin1_check.html">
+    <span class="label">◀ BACK</span>
+    <span class="title">確認問題</span>
+  </a>
+  <a href="index.html" class="next">
+    <span class="label">NEXT ▶</span>
+    <span class="title">単元表に戻る</span>
+  </a>
+</nav>
+
+</main>
+</div>
+
+<script src="app.js"></script>
+<script>
+// 段階ヒント:ボタンを押すたびにヒントが1つずつ増え、最後に答えが出る
+document.querySelectorAll('.hq').forEach(function(hq){
+  var hints = hq.querySelectorAll('.hq-hint');
+  var answer = hq.querySelector('.hq-answer');
+  var btn = hq.querySelector('.hq-btn');
+  var reset = hq.querySelector('.hq-reset');
+  var shown = 0;
+  function label(){
+    if (shown < hints.length) btn.textContent = '💡 ヒント' + (shown + 1) + 'を見る';
+    else btn.textContent = '✅ 答えを見る';
+  }
+  btn.addEventListener('click', function(){
+    if (shown < hints.length) {
+      hints[shown].hidden = false;
+      shown++;
+      reset.hidden = false;
+      label();
+    } else {
+      answer.hidden = false;
+      btn.hidden = true;
+    }
+  });
+  reset.addEventListener('click', function(){
+    hints.forEach(function(h){ h.hidden = true; });
+    answer.hidden = true;
+    shown = 0;
+    btn.hidden = false;
+    reset.hidden = true;
+    label();
+  });
+});
+</script>
+</body>
+</html>
