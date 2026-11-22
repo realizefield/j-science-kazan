@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>入試問題 第3講 地層と大地の変動 | GAMBA中学理科</title>
+<link rel="stylesheet" href="app.css">
+<style>
+.src-note{background:#FFF3E0;padding:10px 14px;border-radius:8px;color:#5D4037;font-size:15px;border-left:4px solid #FF8C42;}
+.ex-text{background:#fff;border:2px solid #FFE0B2;border-radius:12px;padding:14px 18px;line-height:1.9;color:#2C3E50;font-size:15px;margin:14px 0;}
+.ex-text .choices{margin:6px 0 6px 1em;}
+.ex-fig{margin:12px 0;text-align:center;}
+.ex-fig img{width:min(100%,var(--w,300px));height:auto;background:#fff;border:1.5px solid #FFE0B2;border-radius:8px;}
+.ex-fig-cap{font-size:12.5px;color:#5D4037;margin-top:4px;}
+.fig-row{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;align-items:flex-end;}
+.fig-row .ex-fig{margin:6px 0;}
+.tip-box{background:#E8F5E9;border-left:4px solid #43A047;border-radius:8px;padding:12px 16px;margin:16px 0;line-height:1.8;font-size:14.5px;color:#2E4A31;}
+.tip-box strong{color:#2E7D32;}
+
+/* 段階ヒント */
+.hq{background:#fff;border:2px solid #FFE0B2;border-radius:14px;padding:16px 18px;margin:16px 0;box-shadow:0 2px 6px rgba(0,0,0,.05);}
+.hq-tag{display:inline-block;background:#FF8C42;color:#fff;font-weight:bold;font-size:13px;padding:2px 12px;border-radius:14px;margin-bottom:8px;}
+.hq-q{font-size:15.5px;line-height:1.8;color:#2C3E50;font-weight:bold;}
+.hq-hint{margin-top:10px;padding:10px 14px;border-radius:8px;background:#FFFDE7;border-left:4px solid #FBC02D;line-height:1.8;font-size:14.5px;color:#5D4037;animation:hqfade .35s ease;}
+.hq-hint .lv{font-weight:bold;color:#F57F17;margin-right:6px;}
+.hq-answer{margin-top:12px;padding:12px 16px;border-radius:8px;background:#E3F2FD;border-left:4px solid #1E88E5;line-height:1.9;font-size:15px;color:#1B3A57;animation:hqfade .35s ease;}
+.hq-answer .ans{font-size:18px;font-weight:bold;color:#C62828;}
+.hq-answer ol{margin:6px 0 0 1.4em;padding:0;font-size:14.5px;}
+.hq-btns{margin-top:12px;display:flex;gap:10px;flex-wrap:wrap;align-items:center;}
+.hq-btn{background:#FF8C42;color:#fff;border:none;border-radius:20px;padding:8px 20px;font-size:14px;font-weight:bold;cursor:pointer;font-family:inherit;transition:.2s;}
+.hq-btn:hover{background:#E67838;}
+.hq-reset{background:#fff;color:#8D6E63;border:2px solid #D7CCC8;border-radius:20px;padding:6px 14px;font-size:13px;cursor:pointer;font-family:inherit;}
+.hq-reset:hover{background:#EFEBE9;}
+.hq [hidden]{display:none !important;}
+@keyframes hqfade{from{opacity:0;transform:translateY(-4px);}to{opacity:1;transform:none;}}
+</style>
+</head>
+<body data-page="chisou1_nyushi">
+
+<nav class="topnav">
+  <span class="brand">🌋 GAMBA 中学理科 火山・地震・地形</span>
+  <span class="sep">|</span>
+  <a href="index.html">📊 単元表</a>
+  <a href="chisou1.html">レッスンへ戻る</a>
+</nav>
+
+<div class="wrap">
+
+<header class="hero">
+  <div class="crumb">第3講 / 入試問題</div>
+  <h1>入試問題:地層の新旧と柱状図 <span class="stars">★★★</span></h1>
+  <p class="sub">実際の入試に出た3問に挑戦しましょう。難しいので、<strong>ヒントを1つずつ</strong>見ながら進められます。まず自分で考えて、困ったら「ヒント」を押してください。</p>
+</header>
+
+<main>
+
+<div class="tip-box">
+  <strong>💡 地層を読み解くコツ</strong><br>
+  ① 地層は<strong>下にあるものほど古い</strong>(上へ重なるように積もる)<br>
+  ② しゅう曲(曲がり)や断層(ずれ)は、<strong>それを受けた地層ができたあと</strong>に起きたできごと。断層に切られている地層は、断層より古い<br>
+  ③ 断層に切られずに、上をおおっている地層は、<strong>断層より新しい</strong><br>
+  ④ 曲がった地層の上に、曲がっていない地層がのっているときは、<strong>下の地層が曲がったあとに、上の地層が積もった</strong><br>
+  ⑤ 柱状図を比べるときは、<strong>地表からの深さ</strong>ではなく<strong>標高</strong>になおす(標高=地表の標高−深さ)
+</div>
+
+<!-- ================================================== -->
+<section class="unit">
+  <div class="unit-title"><span class="num">1</span>できごとを古い順に並べる①</div>
+  <p class="src-note">📖 <strong>入試問題 より</strong>(秋田県)</p>
+
+  <div class="ex-text">
+    右図は、ある場所の露頭に見られる地層を観察し、その一部をスケッチしたものである。図の地層から、過去のできごとの一部として、次のア〜エのことがわかった。これらのできごとを古い順に並べ、記号を書け。
+    <div class="ex-fig"><img src="chiso_01.png" alt="露頭のスケッチ(A層、B層、X−Y面、断層)" style="--w:330px"><div class="ex-fig-cap">露頭のスケッチ(A層・B層・X−Y面・断層)</div></div>
+    <div class="choices">
+      ア　断層ができた。<br>
+      イ　B層がしゅう曲した。<br>
+      ウ　X〜Y面ができた。<br>
+      エ　A層が堆積した。
+    </div>
+  </div>
+
+  <div class="hq">
+    <span class="hq-tag">問1 ステップ1</span>
+    <div class="hq-q">イ(B層がしゅう曲した)と ア(断層ができた)は、どちらが先ですか。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント1</span>図のB層(a・b・c)を見てください。どの層も曲がっています。そして、1本の断層の線が、その曲がった層をななめに横切っています。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント2</span>断層は、すでにある地層を切ってずらします。「先に曲がっていた層」を「あとから断層が切った」と考えられます。</div>
+    <div class="hq-answer" hidden>答え:<span class="ans">イ → ア</span><br>しゅう曲が先、断層があとです。</div>
+    <div class="hq-btns"><button class="hq-btn">💡 ヒント1を見る</button><button class="hq-reset" hidden>↻ とじる</button></div>
+  </div>
+
+  <div class="hq">
+    <span class="hq-tag">問1 ステップ2</span>
+    <div class="hq-q">ア(断層ができた)と ウ(X〜Y面ができた)は、どちらが先ですか。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント1</span>断層の線を、下から上へたどってみましょう。どこで止まっていますか。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント2</span>断層の線は X−Y面のところで止まっていて、その上のA層にはのびていません。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント3</span>X−Y面を切っていない断層は、X−Y面より古いできごとです。(断層ができたあとで、B層の上部が削られ、X−Y面ができました)</div>
+    <div class="hq-answer" hidden>答え:<span class="ans">ア → ウ</span><br>断層が先、X−Y面があとです。</div>
+    <div class="hq-btns"><button class="hq-btn">💡 ヒント1を見る</button><button class="hq-reset" hidden>↻ とじる</button></div>
+  </div>
+
+  <div class="hq">
+    <span class="hq-tag">問1 ステップ3</span>
+    <div class="hq-q">ウ(X〜Y面ができた)と エ(A層が堆積した)は、どちらが先ですか。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント1</span>A層は、X−Y面の上にのっています。地層は下から順に積もっていきます。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント2</span>まずX−Y面(削られた面)ができ、そのあとで、その上にA層が積もりました。このような面を「不整合面」といいます。</div>
+    <div class="hq-answer" hidden>答え:<span class="ans">ウ → エ</span></div>
+    <div class="hq-btns"><button class="hq-btn">💡 ヒント1を見る</button><button class="hq-reset" hidden>↻ とじる</button></div>
+  </div>
+
+  <div class="hq">
+    <span class="hq-tag">問1 答え</span>
+    <div class="hq-q">ここまでをつなげて、ア〜エを古い順に並べましょう。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント1</span>ステップ1〜3の結果は「イ→ア」「ア→ウ」「ウ→エ」でした。この3つをつなげます。</div>
+    <div class="hq-answer" hidden>答え:<span class="ans">イ → ア → ウ → エ</span><br>
+      できごとの流れをくわしく見ると、次のようになります。
+      <ol>
+        <li>B層が海底で堆積して、水平な地層ができた。</li>
+        <li>地殻の変動で両端を押す力が加わり、B層がしゅう曲した。<strong>(イ)</strong></li>
+        <li>しゅう曲したB層の両端を引っ張る力がはたらき、断層ができた。<strong>(ア)</strong></li>
+        <li>隆起が起こり、B層が海中から地上にもちあげられた。</li>
+        <li>地上では、流水などの侵食作用によって、B層の上部が削られた。<strong>(ウ)</strong></li>
+        <li>その後、B層が沈降して水中に没し、削られたB層の上部にA層の地層が堆積し、X−Yの不整合面ができた。<strong>(ウ・エ)</strong></li>
+        <li>ふたたび、隆起が起こった。</li>
+      </ol>
+    </div>
+    <div class="hq-btns"><button class="hq-btn">💡 ヒント1を見る</button><button class="hq-reset" hidden>↻ とじる</button></div>
+  </div>
+</section>
+
+<!-- ================================================== -->
+<section class="unit">
+  <div class="unit-title"><span class="num">2</span>できごとを古い順に並べる②</div>
+  <p class="src-note">📖 <strong>入試問題 より</strong>(岩手県)</p>
+
+  <div class="ex-text">
+    次のア〜オは、右図の地層がつくられるまでの主なできごとである。ア〜オを起こった順に並べかえ、その記号を書け。
+    <div class="ex-fig"><img src="chiso_02.png" alt="地層の断面(A、B、C、断層f−f')" style="--w:350px"><div class="ex-fig-cap">地層の断面(A・B・C と 断層 f−f')</div></div>
+    <div class="choices">
+      ア　Aの地層が堆積した。<br>
+      イ　Bの地層が堆積した。<br>
+      ウ　Cの地層が堆積した。<br>
+      エ　Aの地層が曲げられた。<br>
+      オ　f−f′の断層で地層がずれた。
+    </div>
+  </div>
+
+  <div class="hq">
+    <span class="hq-tag">問2 ステップ1</span>
+    <div class="hq-q">ア(Aの地層が堆積した)と エ(Aの地層が曲げられた)は、どちらが先ですか。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント1</span>曲げられるためには、まず、曲げられる地層がなければなりません。</div>
+    <div class="hq-answer" hidden>答え:<span class="ans">ア → エ</span><br>Aの地層ができてから、曲げられました。</div>
+    <div class="hq-btns"><button class="hq-btn">💡 ヒント1を見る</button><button class="hq-reset" hidden>↻ とじる</button></div>
+  </div>
+
+  <div class="hq">
+    <span class="hq-tag">問2 ステップ2</span>
+    <div class="hq-q">エ(Aの地層が曲げられた)と イ(Bの地層が堆積した)は、どちらが先ですか。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント1</span>図でAとBを見比べましょう。Aの層は大きく曲がっていますが、Bの層はどうなっていますか。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント2</span>Bの層は、Aのように大きく曲がっていません。もしBが積もったあとで地層が曲げられたのなら、Bも一緒に曲がるはずです。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント3</span>曲がったAの上に、曲がっていないBがのっています。つまり、Aが曲げられたあとで、Bが積もりました。</div>
+    <div class="hq-answer" hidden>答え:<span class="ans">エ → イ</span></div>
+    <div class="hq-btns"><button class="hq-btn">💡 ヒント1を見る</button><button class="hq-reset" hidden>↻ とじる</button></div>
+  </div>
+
+  <div class="hq">
+    <span class="hq-tag">問2 ステップ3</span>
+    <div class="hq-q">イ(Bの地層が堆積した)と オ(f−f′の断層でずれた)は、どちらが先ですか。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント1</span>断層 f−f′ の線を、下から上へたどってみましょう。どの地層を切っていますか。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント2</span>f−f′ の断層は、Aの地層だけでなく、Bの地層も切っています。断層に切られている地層は、断層より古いものです。</div>
+    <div class="hq-answer" hidden>答え:<span class="ans">イ → オ</span></div>
+    <div class="hq-btns"><button class="hq-btn">💡 ヒント1を見る</button><button class="hq-reset" hidden>↻ とじる</button></div>
+  </div>
+
+  <div class="hq">
+    <span class="hq-tag">問2 ステップ4</span>
+    <div class="hq-q">オ(f−f′の断層でずれた)と ウ(Cの地層が堆積した)は、どちらが先ですか。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント1</span>f−f′ の断層は、いちばん上のCの地層まで届いているでしょうか。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント2</span>断層はCの地層を切っていません。Cは、断層ができたあとに、その上に積もったのです。</div>
+    <div class="hq-answer" hidden>答え:<span class="ans">オ → ウ</span></div>
+    <div class="hq-btns"><button class="hq-btn">💡 ヒント1を見る</button><button class="hq-reset" hidden>↻ とじる</button></div>
+  </div>
+
+  <div class="hq">
+    <span class="hq-tag">問2 答え</span>
+    <div class="hq-q">ここまでをつなげて、ア〜オを起こった順に並べましょう。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント1</span>ステップ1〜4の結果は「ア→エ」「エ→イ」「イ→オ」「オ→ウ」でした。順番につなげます。</div>
+    <div class="hq-answer" hidden>答え:<span class="ans">ア → エ → イ → オ → ウ</span><br>
+      Aが積もる → Aが曲げられる → Bが積もる → 断層でずれる → Cが積もる、の順です。</div>
+    <div class="hq-btns"><button class="hq-btn">💡 ヒント1を見る</button><button class="hq-reset" hidden>↻ とじる</button></div>
+  </div>
+</section>
+
+<!-- ================================================== -->
+<section class="unit">
+  <div class="unit-title"><span class="num">3</span>ボーリング調査と柱状図の読み取り</div>
+  <p class="src-note">📖 <strong>入試問題 より</strong>(富山県)　<span style="color:#C62828;font-weight:bold;">★★★ 難問</span></p>
+
+  <div class="ex-text">
+    ある地域でボーリングによって地下のようすを調べた。図1は、地形図を模式的に示したもので、A〜Dは調査した地点である。図2は、A地点とC地点の地層の重なり方を柱状図で表したものである。なお、この地域の地層は東西の方向に同じ角度で傾いており、火山灰の層は1つしかないことがわかっている。あとの問いに答えよ。
+    <div class="fig-row">
+      <div class="ex-fig"><img src="chiso_03.png" alt="図1 地形図(A〜D地点と等高線)" style="--w:300px"><div class="ex-fig-cap">図1 地形図</div></div>
+      <div class="ex-fig"><img src="chiso_04.png" alt="図2 A地点とC地点の柱状図" style="--w:360px"><div class="ex-fig-cap">図2 A地点・C地点の柱状図</div></div>
+    </div>
+    (1) D地点の地表付近はどのような層か、次の中から1つ選べ。<br>
+    <div class="choices">[砂れきの層　火山灰の層　泥の層　砂の層]</div>
+    (2) B地点でボーリングを行うと、地表から何m掘ったところで火山灰の層が現れ始めると予想されるか。
+  </div>
+
+  <div class="hq">
+    <span class="hq-tag">問(1) ステップ1</span>
+    <div class="hq-q">地形図(図1)から、C地点とD地点の標高をよみとりましょう。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント1</span>図1の等高線(曲線)には、70m・80m・90m と数字が書いてあります。CとDは、それぞれどの線の上にありますか。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント2</span>Cは90mの等高線の上、Dは70mの等高線の上にあります。(同じように、BはCと同じ90m、AはDと同じ70mです)</div>
+    <div class="hq-answer" hidden>答え:<span class="ans">C地点 90m、D地点 70m</span><br>標高は、A・Dが70m、B・Cが90mです。</div>
+    <div class="hq-btns"><button class="hq-btn">💡 ヒント1を見る</button><button class="hq-reset" hidden>↻ とじる</button></div>
+  </div>
+
+  <div class="hq">
+    <span class="hq-tag">問(1) ステップ2</span>
+    <div class="hq-q">C地点の柱状図(図2)で、火山灰の層は標高では何m〜何mにありますか。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント1</span>柱状図は「地表からの深さ」で書かれています。標高になおすには、<strong>地表の標高から深さをひきます</strong>。Cの地表の標高は90mでした。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント2</span>図2のCを見ると、火山灰の層は、地表から15m〜25mの深さにあります。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント3</span>90−15 と 90−25 を計算しましょう。</div>
+    <div class="hq-answer" hidden>答え:<span class="ans">標高65m〜75m</span><br>90−15=75、90−25=65 です。</div>
+    <div class="hq-btns"><button class="hq-btn">💡 ヒント1を見る</button><button class="hq-reset" hidden>↻ とじる</button></div>
+  </div>
+
+  <div class="hq">
+    <span class="hq-tag">問(1) 答え</span>
+    <div class="hq-q">D地点の地表付近(標高70m)は、どの層ですか。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント1</span>この地域の地層は、東西には傾いていますが、南北には傾いていません。図1で、CとDは南北に並んでいるので、<strong>同じ標高には同じ層</strong>があります。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント2</span>Dの地表は標高70mです。Cで標高70mのところは、どの層でしょう。Cの火山灰の層は、標高65m〜75mにありました。</div>
+    <div class="hq-answer" hidden>答え:<span class="ans">火山灰の層</span><br>標高70mは、65m〜75mの範囲に入っているので、D地点の地表付近は火山灰の層です。</div>
+    <div class="hq-btns"><button class="hq-btn">💡 ヒント1を見る</button><button class="hq-reset" hidden>↻ とじる</button></div>
+  </div>
+
+  <div class="hq">
+    <span class="hq-tag">問(2) ステップ1</span>
+    <div class="hq-q">A地点の柱状図(図2)で、火山灰の層は標高では何m〜何mにありますか。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント1</span>Cのときと同じように、地表の標高(Aは70m)から深さをひきます。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント2</span>図2のAを見ると、火山灰の層は、地表から5m〜15mの深さにあります。</div>
+    <div class="hq-answer" hidden>答え:<span class="ans">標高55m〜65m</span><br>70−5=65、70−15=55 です。</div>
+    <div class="hq-btns"><button class="hq-btn">💡 ヒント1を見る</button><button class="hq-reset" hidden>↻ とじる</button></div>
+  </div>
+
+  <div class="hq">
+    <span class="hq-tag">問(2) ステップ2</span>
+    <div class="hq-q">AとCの火山灰の層を比べましょう。火山灰の層は、東と西のどちらが高くなっていますか。また、AからCまで(200m)で何m変わりますか。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント1</span>火山灰の層の「上の面」の標高を比べます。A地点は65m、C地点は?(問(1)のステップ2を見てください)</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント2</span>図1で、Aは西、Cは東にあります。Cの上の面は75mなので、75−65 を計算しましょう。</div>
+    <div class="hq-answer" hidden>答え:<span class="ans">東が高い(200mで10m高くなる)</span><br>下の面も、A:55m → C:65m で、同じく10m高くなっています。</div>
+    <div class="hq-btns"><button class="hq-btn">💡 ヒント1を見る</button><button class="hq-reset" hidden>↻ とじる</button></div>
+  </div>
+
+  <div class="hq">
+    <span class="hq-tag">問(2) ステップ3</span>
+    <div class="hq-q">AとCのちょうど真ん中にあるB地点では、火山灰の層は標高何m〜何mにあると考えられますか。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント1</span>図1で、A(0m)・B(100m)・C(200m)の位置を確認しましょう。Bは、AとCのちょうど真ん中です。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント2</span>地層は東西に同じ角度で傾いているので、Bの火山灰の層の標高は、AとCの<strong>ちょうど真ん中</strong>になります。上の面は 65m と 75m の真ん中、下の面は 55m と 65m の真ん中です。</div>
+    <div class="hq-answer" hidden>答え:<span class="ans">標高60m〜70m</span><br>上の面は(65+75)÷2=70m、下の面は(55+65)÷2=60m です。</div>
+    <div class="hq-btns"><button class="hq-btn">💡 ヒント1を見る</button><button class="hq-reset" hidden>↻ とじる</button></div>
+  </div>
+
+  <div class="hq">
+    <span class="hq-tag">問(2) 答え</span>
+    <div class="hq-q">B地点の標高は90mです。地表から何m掘ると、火山灰の層が現れ始めますか。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント1</span>火山灰の層の「上の面」は標高70m、地表は標高90mです。「現れ始める」のは、層の上の面にあたったときです。</div>
+    <div class="hq-hint" hidden><span class="lv">ヒント2</span>地表から上の面までの深さは、90−70 で求められます。</div>
+    <div class="hq-answer" hidden>答え:<span class="ans">20m</span><br>90−70=20m。20m〜30mのところに火山灰の層があります。
+      <div class="ex-fig"><img src="chiso_05.png" alt="A〜D地点の柱状図を標高でそろえた図" style="--w:300px"><div class="ex-fig-cap">A〜D地点の柱状図を標高でそろえた図。火山灰の層(紫)の上の面と下の面を、それぞれ直線で結ぶと、Bでは標高60〜70mにあたります。</div></div>
+    </div>
+    <div class="hq-btns"><button class="hq-btn">💡 ヒント1を見る</button><button class="hq-reset" hidden>↻ とじる</button></div>
+  </div>
+</section>
+
+<div class="next-actions">
+  <h3>🎉 おつかれさま!</h3>
+  <p>入試問題の3問はどうでしたか?ヒントなしで解けるようになるまで、もう一度チャレンジしてみましょう。</p>
+  <div class="links">
+    <a href="chisou1_check.html">📋 確認問題へ</a>
+    <a href="chisou1.html">📖 レッスンに戻る</a>
+    <a href="index.html">📊 単元表へ</a>
+  </div>
+</div>
+
+<nav class="pagenav">
+  <a href="chisou1_check.html">
+    <span class="label">◀ BACK</span>
+    <span class="title">確認問題</span>
+  </a>
+  <a href="index.html" class="next">
+    <span class="label">NEXT ▶</span>
+    <span class="title">単元表に戻る</span>
+  </a>
+</nav>
+
+</main>
+</div>
+
+<script src="app.js"></script>
+<script>
+// 段階ヒント:ボタンを押すたびにヒントが1つずつ増え、最後に答えが出る
+document.querySelectorAll('.hq').forEach(function(hq){
+  var hints = hq.querySelectorAll('.hq-hint');
+  var answer = hq.querySelector('.hq-answer');
+  var btn = hq.querySelector('.hq-btn');
+  var reset = hq.querySelector('.hq-reset');
+  var shown = 0;
+  function label(){
+    if (shown < hints.length) btn.textContent = '💡 ヒント' + (shown + 1) + 'を見る';
+    else btn.textContent = '✅ 答えを見る';
+  }
+  btn.addEventListener('click', function(){
+    if (shown < hints.length) {
+      hints[shown].hidden = false;
+      shown++;
+      reset.hidden = false;
+      label();
+    } else {
+      answer.hidden = false;
+      btn.hidden = true;
+    }
+  });
+  reset.addEventListener('click', function(){
+    hints.forEach(function(h){ h.hidden = true; });
+    answer.hidden = true;
+    shown = 0;
+    btn.hidden = false;
+    reset.hidden = true;
+    label();
+  });
+});
+</script>
+</body>
+</html>
